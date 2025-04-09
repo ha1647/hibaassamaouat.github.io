@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Blog – Hiba Assamaouat</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Engagement&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Google Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="searchbar.css" />
+  <script src="searchbar.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="main-wrapper">
+      <nav class="class-nav-bar">
+        <h1 class="title">Hiba Assamaouat</h1>
+
+        <div class="search-wrapper">
+          <input type="text" class="search-input" placeholder="Search..." />
+          <button class="search-btn">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
+              <path d="M21 20l-4.35-4.35a7.5 7.5 0 10-1.41 1.41L20 21zM10 16a6 6 0 110-12 6 6 0 010 12z"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li class="dropdown">
+          <a href="projects.html">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="engineering.html">Engineering Projects</a></li>
+            <li><a href="art.html">Art Projects</a></li>
+            <li><a href="otherprojects.html">Other Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="coursework.html">Coursework</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+  <section class="blog-section">
+  <div class="blog-box">
+    <div class="blog-text">
+      <h2 class="blog-title">Why I Started This Website</h2>
+      <p class="blog-date"><i>April 4, 2025</i></p>
+      <p class="blog-snippet">
+        I wanted a space to document things I work on, thoughts I have, and little projects I complete. This post dives into how the idea started, what I learned along the way, and where I see it going.
+      </p>
+      <a href="post1.html" class="read-more">Read more →</a>
+    </div>
+    <div class="blog-image-wrapper">
+      <img src="https://via.placeholder.com/160x120" alt="Post image" class="blog-image" />
+    </div>
+  </div>
+
+  <div class="blog-box">
+    <div class="blog-text">
+      <h2 class="blog-title">What I'm Currently Exploring</h2>
+      <p class="blog-date"><i>March 30, 2025</i></p>
+      <p class="blog-snippet">
+        Lately, I've been curious about the intersection of engineering and theater, and how tools from one world inform the other. Here's a brief look into some of that thinking.
+      </p>
+      <a href="post2.html" class="read-more">Read more →</a>
+    </div>
+    <div class="blog-image-wrapper">
+      <img src="https://via.placeholder.com/160x120" alt="Post image" class="blog-image" />
+    </div>
+  </div>
+</section>  </main>
+</body>
+</html>
