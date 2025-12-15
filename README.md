@@ -13,22 +13,22 @@ I would like to specify that no template was used here. I code everything up mys
 `14-12-2025` <br>
   - [X] New repository set up <br>
   - [X] Set the deadlines for MVP <br>
-  - [ ] Redefine the look and feel of the page (probably not switching to a one-pager, I want the freedom to add new tabs) <br>
 ---
 `15-12-2025` <br>
   - [ ] Reevaluate the importance of each page and what should be kept <br>
+  - [ ] Redefine the look and feel of the page (probably not switching to a one-pager, I want the freedom to add new tabs) <br>
   - [ ] Set up styles.css <br>
   - [ ] Have 0-index.html up and running <br>
-  - 
+  - [ ] 404 not found page <br>
 
 Initial tabs are: `Home`, `Experience`, `Projects`, `Coursework`, and `Blog`. <br>
 Updated configuration and contents:<br>
 
   >`Home` Brief introduction of who I am and what I currently do. This page should be enough for a recruiter (or anyone) to learn everything about me. CV should be accessible from here, as well as my social pages. The rest of the tabs serve as an experience for the visitor and allows them to dive deeper into my story.
 
-  >`Experience` Here the visitor gets a story of my career, they can access my cv, my portfolio, they can read my journey to and through NYUAD (`Coursework` tab gets integrated here)
+  >`Experience` Here the visitor gets a story of my career, they can access my cv, my portfolio, they can read my journey to and through NYUAD (`Coursework` tab gets integrated here), then my internship and research experiences, and finally, they can find out what I am currently up to.
 
-  >`Projects` This one compiles all the academic and non academic projects, portfolio will also be accessible through here.
+  >`Projects` This one compiles all the academic and non academic projects, engineering, design, art projects. Portfolio will also be accessible through here. In each project, I need to explain the tools used, my contributions, lessons learnt.
 
   >`Blog` For the time being, this page will be kept as a "coming soon".
 ---
@@ -45,6 +45,6 @@ Updated configuration and contents:<br>
 
 ## About the management of this repository
 
-I am the sole author of this public repository and claim all this work to be mine. I invite any new coder to learn from my code to implement their own, I tried to make it as clear and simple for all.
+I am the sole author of this public repository and claim all this work to be mine. I invite any new coder to use my code as a reference but to implement their own, I tried to make it as clear and simple as possible for all.
 
-I format the commits as such `daydatemonthhourminute`, to keep track of all the changes on GitHub and GitHub Desktop. For example the next commit I am doing will be: `mon15dec1354`
+I format the commits as such `daydatemonthhourminute`, to keep track of all the changes on GitHub and GitHub Desktop. For example the next commit I am doing will be: `mon15dec1354`.
