@@ -12,7 +12,11 @@
 }
 
 .hiba-assamaouat-logo {
-    width: 150px;
-    height: auto;
-    margin: 10px 0;
+  font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 60px;
+    font-style: normal;
+    text-decoration: none;
+    margin: 50px;
+    color: #1c3752;
 }
