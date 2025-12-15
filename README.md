@@ -33,6 +33,7 @@ Updated configuration and contents:<br>
   >`Blog` For the time being, this page will be kept as a "coming soon".
 
 The look and feel of the page are first visualized on a design app. Could be Figma, Powerpoint, Keynote, etc. I use Freeform. Using my initial design along with my peers' personal websites, I put together and edit the first using the fonts and palette until I reach the configuration I am satisfied with. My goal is to keep things minimal and, as described in the `Home` tab description, to make it able to stand alone, with all the necessary information for a recruiter without needing to search for the fundamental things about me elsewhere.
+
 ---
 `16-12-2025` <br>
   - [ ] 
