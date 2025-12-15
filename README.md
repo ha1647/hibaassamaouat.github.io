@@ -37,3 +37,9 @@ Updated configuration and contents:<br>
 
 `21-12-2025` <br>
   - [ ] Linkedin article posted
+
+## About the management of this repository
+
+I am the sole author of this public repository and claim all this work to be mine. I invite any new coder to learn from my code to implement their own, I tried to make it as clear and simple for all.
+
+I format the commits as such `daydatemonthhourminute`, to keep track of all the changes on GitHub and GitHub Desktop. For example the next commit I am doing will be: `mon15dec1354`
