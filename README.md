@@ -1,7 +1,7 @@
 # hibaassamaouat.github.io
 Personal website of Hiba Assamaouat </br>
 
-/!\ Work in Progress /!\
+:warning: Work in Progress :construction:
 
 
 ## Tasks & Timeline
@@ -14,18 +14,23 @@ I would like to specify that no template was used here. I code everything up mys
   - [X] New repository set up <br>
   - [X] Set the deadlines for MVP <br>
   - [ ] Redefine the look and feel of the page (probably not switching to a one-pager, I want the freedom to add new tabs) <br>
-  - [ ] Reevaluate the importance of each page and if it should be kept <br>
 ---
 `15-12-2025` <br>
+  - [ ] Reevaluate the importance of each page and what should be kept <br>
   - [ ] Set up styles.css <br>
   - [ ] Have 0-index.html up and running <br>
+  - 
 
 Initial tabs are: `Home`, `Experience`, `Projects`, `Coursework`, and `Blog`. <br>
 Updated configuration and contents:<br>
 
   >`Home` Brief introduction of who I am and what I currently do. This page should be enough for a recruiter (or anyone) to learn everything about me. CV should be accessible from here, as well as my social pages. The rest of the tabs serve as an experience for the visitor and allows them to dive deeper into my story.
 
-  >`Experience` Here the visitor gets a story of my career 
+  >`Experience` Here the visitor gets a story of my career, they can access my cv, my portfolio, they can read my journey to and through NYUAD (`Coursework` tab gets integrated here)
+
+  >`Projects` This one compiles all the academic and non academic projects, portfolio will also be accessible through here.
+
+  >`Blog` For the time being, this page will be kept as a "coming soon".
 ---
 `16-12-2025` <br>
   - [ ] 
