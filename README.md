@@ -16,7 +16,7 @@ I would like to specify that no template was used here. I code everything up mys
 ---
 `15-12-2025` <br>
   - [X] Reevaluate the importance of each page and what should be kept <br>
-  - [ ] Redefine the look and feel of the page (probably not switching to a one-pager, I want the freedom to add new tabs) <br>
+  - [x] Redefine the look and feel of the page (probably not switching to a one-pager, I want the freedom to add new tabs) <br>
   - [ ] Set up styles.css <br>
   - [ ] Have 0-index.html up and running <br>
   - [ ] 404 not found page <br>
@@ -41,7 +41,9 @@ The palette was not changed from the previous version of the website:
 
 <img src="images/readme-images/Palette.png" alt="Palette" width="200">
 
+The idea is to keep things simple. Any pizzazz or fancy fonts can be dedicated in the art and design projects.
 
+Let's get to coding!
 ---
 `16-12-2025` <br>
   - [ ] 

@@ -1,0 +1,18 @@
+/* DEFAULT STYLES FOR ALL PAGES */
+
+/* Global and base styling */
+* {
+    background-color: #FEFBF7;
+    color: #4E3E30; /* Text color */
+    font-family: "IBM Plex Sans", sans-serif; 
+    font-optical-sizing: auto; /* Auto-scaling for better readability */
+    font-weight: 400; /* Corrected from '00' to '400' */
+    font-style: normal;
+    margin: 10px 50px;
+}
+
+.hiba-assamaouat-logo {
+    width: 150px;
+    height: auto;
+    margin: 10px 0;
+}
