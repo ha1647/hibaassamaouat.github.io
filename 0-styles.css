@@ -8,15 +8,25 @@
     font-optical-sizing: auto; /* Auto-scaling for better readability */
     font-weight: 400; /* Corrected from '00' to '400' */
     font-style: normal;
-    margin: 10px 50px;
+    /* margin: 10px 50px; */
 }
 
 .hiba-assamaouat-logo {
   font-family: "Playfair Display";
     font-weight: 400;
-    font-size: 60px;
+    font-size: 40px;
     font-style: normal;
     text-decoration: none;
-    margin: 50px;
+    margin: 0px;
     color: #1c3752;
+}
+
+
+
+.footer{
+
+}
+
+.footer-content{
+  
 }

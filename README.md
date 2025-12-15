@@ -43,10 +43,13 @@ The palette was not changed from the previous version of the website:
 
 The idea is to keep things simple. Any pizzazz or fancy fonts can be dedicated in the art and design projects.
 
-Let's get to coding!
+Let's get coding!
+
 ---
 `16-12-2025` <br>
-  - [ ] 
+  - [ ] Set up styles.css <br>
+  - [ ] Have 0-index.html up and running <br>
+  - [ ] 404 not found page <br>
 
 ---
 `20-12-2025` <br>
