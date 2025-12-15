@@ -7,7 +7,7 @@ Personal website of Hiba Assamaouat </br>
 ## Tasks & Timeline
 
 This is the first phase of this website. Twice before, I have tried to develop it, but have failed to complete it because I was building up on a fragile base, and more ideas kept emerging, which caused me to stack blocks on a tower that was bound to fall. This repository is a new version, rebuilt from scratch.<br>
-I would like to specify that no template was used here. I code everything up myself, along with some help from the internet of course. I have nothing against using templates, I simply made the choice to take this project as a web dev challenge.<br>
+I would like to specify that no template was used here. I code everything up myself, along with some help from the internet of course and by getting inspired by the websites made by some peers. I have nothing against using templates, I simply made the choice to take this project as a web dev challenge.<br>
 
 ---
 `14-12-2025` <br>
