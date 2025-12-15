@@ -1,4 +1,4 @@
-# hibaassamaouat.github.io
+# Hiba Assamaouat
 Personal website of Hiba Assamaouat </br>
 
 :warning: Work in Progress :construction:
