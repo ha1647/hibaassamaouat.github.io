@@ -17,9 +17,7 @@ I would like to specify that no template was used here. I code everything up mys
 `15-12-2025` <br>
   - [X] Reevaluate the importance of each page and what should be kept <br>
   - [x] Redefine the look and feel of the page (probably not switching to a one-pager, I want the freedom to add new tabs) <br>
-  - [ ] Set up styles.css <br>
-  - [ ] Have 0-index.html up and running <br>
-  - [ ] 404 not found page <br>
+  - [x] Set up styles.css <br>
 
 Initial tabs are: `Home`, `Experience`, `Projects`, `Coursework`, and `Blog`. <br>
 Updated configuration and contents:<br>
@@ -47,12 +45,12 @@ Let's get coding!
 
 ---
 `16-12-2025` <br>
-  - [ ] Set up styles.css <br>
-  - [ ] Have 0-index.html up and running <br>
-  - [ ] 404 not found page <br>
+  - [ ] Navigation bar & footer <br>
+  - [ ] make the navigation bar responsive to window size <br>
 
 ---
 `20-12-2025` <br>
+  - [ ] 404 not found page <br>
   - [ ] MVP complete
   - [ ] Begin editing the Linkedin post
 ---

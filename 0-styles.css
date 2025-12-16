@@ -11,22 +11,96 @@
     /* margin: 10px 50px; */
 }
 
+/* NAVIGATION BAR */
+.main-wrapper{
+  display: flex;
+  gap: 10rem;
+  padding: 1.5rem 4rem;
+  width: 100%;
+  align-items: center;
+  /* justify-content: space-between; */
+  
+}
 .hiba-assamaouat-logo {
   font-family: "Playfair Display";
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     text-decoration: none;
     margin: 0px;
     color: #1c3752;
 }
 
+/* Navigation Links */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0;
+    overflow: hidden;
+    background-color: #FEFBF7;
+}
+
+li {
+    float: left;
+    margin: 0 5px;
+    padding: 1rem 2rem;
+}
+
+li a{
+  text-decoration: none;
+  color: #4e3e30;
+  display: inline;
+  transition: 0.2s ease-in-out;
+}
+
+li a:hover {
+    color: #af550f;
+    font-weight: bold;
+}
+
+li a.active {
+    color: #1c3752;
+    font-weight: bold;
+}
 
 
+/* Navigation bar collapse for smaller windows */
+.navbar-collapse {
+    display: none; /* Hidden by default */
+}
+
+
+
+
+/* FOOTER */
 .footer{
-
+  display: flex;
+  padding: 1.5rem 4rem;
 }
 
 .footer-content{
-  
+  font-size: smaller;
+}
+
+.fa{
+  padding: 10px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 100%;
+  transition: 0.1s ease-in-out;
+}
+.fa-linkedin {
+  background:#1c3752;
+  color: white;
+  /* padding: 10px; */
+  /* border-radius: 1%; */
+  text-decoration: none;
+}
+
+.fa-linkedin:hover {
+    background: #af550f;
+    color: white;
 }
