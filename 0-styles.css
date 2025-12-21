@@ -9,7 +9,7 @@
     font-weight: 400; /* Corrected from '00' to '400' */
     font-style: normal;
     /* margin: 10px 50px; */
-    box-sizing: border-box; /* Added for better layout control */
+    box-sizing: border-box;
 }
 
 
@@ -36,6 +36,22 @@
     color: #1c3752;
 }
 
+.navbar-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 4rem;
+}
+.navbar{
+  top: 0;
+  width: 100%;
+}
 /* Navigation Links */
 ul {
     list-style-type: none;
@@ -92,8 +108,8 @@ li a.active {
   font-size: smaller;
   width: 100%;
   border-top: 1px solid #ccc;
-
-  padding: 1.5rem clamp(1rem, 5vw, 4rem);
+  margin-top: 3rem;
+  padding: 1rem clamp(1rem, 5vw, 4rem);
 
   position: relative;
   display: inline-block;
@@ -109,12 +125,12 @@ li a.active {
 .footer-socials{
   display: flex;
   gap: 0.75rem;
-  
 }
 
 .fa{
   padding: 10px;
-  font-size: 17px;
+  font-size: 15px;
+  
 
   text-align: center;
   text-decoration: none;
@@ -128,8 +144,8 @@ li a.active {
   justify-items: center;
   line-height: 1;
 
-  width: 15px;
-  height: 15px;
+  width: 32px;
+  height: 32px;
 }
 .fa:hover{
   background: #af550f;
@@ -149,7 +165,7 @@ li a.active {
   text-decoration: none;
 }
 .fa-envelope{
-  font-size: 14px;
+  font-size: 12px;
   background:#1c3752;
   color: white;
   /* padding: 10px;  */
