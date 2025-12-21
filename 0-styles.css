@@ -9,7 +9,11 @@
     font-weight: 400; /* Corrected from '00' to '400' */
     font-style: normal;
     /* margin: 10px 50px; */
+    box-sizing: border-box; /* Added for better layout control */
 }
+
+
+/* * { outline: 1px solid rgb(161, 77, 77,0.5); } */
 
 /* NAVIGATION BAR */
 .main-wrapper{
@@ -18,7 +22,8 @@
   padding: 1.5rem 4rem;
   width: 100%;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  /* box-sizing: border-box; */
   
 }
 .hiba-assamaouat-logo {
@@ -69,14 +74,31 @@ li a.active {
     display: none; /* Hidden by default */
 }
 
-
-
+@media screen and (max-width: 600px) {
+    ul {
+        display: none; /* Hide the navigation links */
+    }
+    .navbar-collapse {
+        display: block; /* Show the hamburger menu */
+        cursor: pointer;
+    }
+}
 
 /* FOOTER */
 .footer{
-  padding: 1.5rem 4rem;
+  /* padding: 1.5rem 4rem;
+  box-sizing: border-box; */
+
   font-size: smaller;
+  width: 100%;
+  border-top: 1px solid #ccc;
+
+  padding: 1.5rem clamp(1rem, 5vw, 4rem);
+
+  position: relative;
+  display: inline-block;
 }
+
 
 .footer-content{
   display: flex;
@@ -84,30 +106,63 @@ li a.active {
   align-items: center;
 }
 
-.footer-socials {
+.footer-socials{
   display: flex;
   gap: 0.75rem;
+  
 }
 
 .fa{
   padding: 10px;
-  font-size: 15px;
-  width: 15px;
+  font-size: 17px;
+
   text-align: center;
   text-decoration: none;
-  margin: 5px 5px;
+  /* margin: 1px 5px; */
   border-radius: 100%;
-  transition: 0.1s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  line-height: 1;
+
+  width: 15px;
+  height: 15px;
 }
-.fa-linkedin {
+.fa:hover{
+  background: #af550f;
+}
+.fa-linkedin{
   background:#1c3752;
   color: white;
-  /* padding: 10px; */
-  /* border-radius: 1%; */
+  /* padding: 10px;  */
+  border-radius: 50%;
+  text-decoration: none;
+}
+.fa-github{
+  background:#1c3752;
+  color: white;
+  /* padding: 10px;  */
+  border-radius: 50%;
+  text-decoration: none;
+}
+.fa-envelope{
+  font-size: 14px;
+  background:#1c3752;
+  color: white;
+  /* padding: 10px;  */
+  border-radius: 50%;
   text-decoration: none;
 }
 
-.fa-linkedin:hover {
-    background: #af550f;
-    color: white;
+/* Attempt at including email on hover */
+/* possible explanation of failure: the text needs sufficient space to appear (margin perhaps)*/
+.hide {
+  display: none;
+}
+.fa-envelope:hover + .hide{
+  display: block;
+  color: #1c3752;
 }
