@@ -45,12 +45,14 @@ Let's get coding!
 
 ---
 `21-12-2025` <br>
-  - [ ] Navigation bar & footer <br>
-  - [ ] make the navigation bar responsive to window size <br>
+  - [x] Navigation bar & footer
+  - [ ] started favicon design and onfig
+  - [ ] make the navigation bar responsive to window size
 
 ---
 `25-12-2025` <br>
-  - [ ] 404 not found page <br>
+  - [ ] fix favicon display
+  - [ ] 404 not found page
   - [ ] MVP complete
   - [ ] Begin editing the Linkedin post
 ---

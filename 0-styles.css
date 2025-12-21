@@ -1,5 +1,12 @@
 /* DEFAULT STYLES FOR ALL PAGES */
 
+/* PALETTE */
+/* CREAM color: #FEFBF7; */
+/* NAVY BLUE color: #1c3752; */
+/* DARK BROWN color: #4e3e30; */
+/* ORANGE color: #af550f; */
+
+
 /* Global and base styling */
 * {
     background-color: #FEFBF7;
@@ -100,6 +107,13 @@ li a.active {
     }
 }
 
+/* MAIN CONTENT */
+.main-content {
+  margin-top: 100px; /* to avoid content being hidden behind the fixed navbar */
+  padding: 1rem 10rem;
+  
+}
+
 /* FOOTER */
 .footer{
   /* padding: 1.5rem 4rem;
@@ -115,6 +129,17 @@ li a.active {
   display: inline-block;
 }
 
+.footer-signature{
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 30px;
+  font-style: normal;
+  text-decoration: none;
+  margin: 0px;
+  color: #1c3752;
+  text-align: center;
+  padding-top: 2rem;
+}
 
 .footer-content{
   display: flex;
@@ -130,7 +155,6 @@ li a.active {
 .fa{
   padding: 10px;
   font-size: 15px;
-  
 
   text-align: center;
   text-decoration: none;
