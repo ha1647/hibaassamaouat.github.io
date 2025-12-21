@@ -44,17 +44,17 @@ The idea is to keep things simple. Any pizzazz or fancy fonts can be dedicated i
 Let's get coding!
 
 ---
-`16-12-2025` <br>
+`21-12-2025` <br>
   - [ ] Navigation bar & footer <br>
   - [ ] make the navigation bar responsive to window size <br>
 
 ---
-`20-12-2025` <br>
+`25-12-2025` <br>
   - [ ] 404 not found page <br>
   - [ ] MVP complete
   - [ ] Begin editing the Linkedin post
 ---
-`21-12-2025` <br>
+`29-12-2025` <br>
   - [ ] Linkedin article posted
 
 ## About the management of this repository
