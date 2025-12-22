@@ -51,7 +51,8 @@ Let's get coding!
 
 ---
 `22-12-2025` <br>
-  - [x] finished the navigation bar responsive to window size (sidebar)
+  - [x] (12-1am) finished the navigation bar responsive to window size (sidebar)
+  - [ ] (1pm) few touche-ups on the navigation sidebar
 
 ---
 `25-12-2025` <br>
