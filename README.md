@@ -46,8 +46,12 @@ Let's get coding!
 ---
 `21-12-2025` <br>
   - [x] Navigation bar & footer
-  - [ ] started favicon design and onfig
-  - [ ] make the navigation bar responsive to window size
+  - [x] started favicon design and config
+  - [x] started the navigation bar responsive to window size (sidebar)
+
+---
+`22-12-2025` <br>
+  - [x] finished the navigation bar responsive to window size (sidebar)
 
 ---
 `25-12-2025` <br>
