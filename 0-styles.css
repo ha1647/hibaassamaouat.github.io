@@ -104,18 +104,33 @@ li a.active {
 .sidebar{
   position: fixed;
   top: 0;
-  right: -100%; /* was right: 0; but we change it to incorporate the slide-in effect */
+  right: 0; /* was right: 0; but we change it to incorporate the slide-in effect */
   height: 100vh;
   width: 250px;
   z-index: 1001;
+
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+
+  transform: translateX(100%); /* hidden */
+  transition: transform 0.4s ease;
+
   /* background-color: #fefbf757;
   backdrop-filter: blur(10px); */
+
   box-shadow: -10px 0 20px rgba(78, 62, 48, 0.5);
-  display: none;
-  flex-direction: column;
   /* align-items: flex-start; */
   /* justify-content: flex-start; */
-  transition: width 1s ease;
+  transition: 0.7s ease-out,
+              opacity 0.3s ease;
+
+  opacity: 0;
+}
+
+.sidebar.active{
+  transform: translateX(0); /* visible */
+  opacity: 1;
 }
 
 .sidebar li{
