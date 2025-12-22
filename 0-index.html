@@ -37,12 +37,61 @@
           <a href="./0-index.html" class="hiba-assamaouat-logo">Hiba Assamaouat</a>
         </nav>
 
+        <!-- Navigation Bar -->
         <ul>
+          <li class="hideOnMobile"><a class="active" href="./0-index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="./1-experience.html">Experience</a></li>
+          <li class="hideOnMobile"><a href="./2-projects.html">Projects</a></li>
+          <li class="hideOnMobile"><a href="./3-blog.html">Blog</a></li>
+          <!-- menu icon retrieved from Google Fonts. Downloaded .svg file and opened with .txt to get link -->
+          <li class="hideOnPc" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1c3752"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+
+        <!-- Sidebar for mobile -->
+        <ul class="sidebar">
+          <li class="sidebar-header">
+            <a class="footer-signature" style="margin-bottom: 20px; grid-column: 2; justify-self: center;" href="./0-index.html">H♤A</a>
+            <button class="sidebar-close" aria-label="Close menu">
+              <!-- menu icon retrieved from Google Fonts. Downloaded .svg file and opened with .txt to get link -->
+              <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1c3752"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            </button>
+          </li>
+
           <li><a class="active" href="./0-index.html">Home</a></li>
           <li><a href="./1-experience.html">Experience</a></li>
           <li><a href="./2-projects.html">Projects</a></li>
           <li><a href="./3-blog.html">Blog</a></li>
+
+          <div class="sidebar-footer">
+            <!-- LinkedIn Icon -->
+            <a 
+              href="https://www.linkedin.com/in/hiba-assamaouat/"
+              target="blank"
+              aria-label="LinkedIn"
+              class="fa fa-linkedin">
+            </a>
+
+            <!-- GitHub Icon -->
+            <a 
+              href="https://github.com/ha1647"
+              target="blank"
+              aria-label="GitHub"
+              class="fa fa-github">
+            </a>
+
+            <!-- Mail Icon -->
+            <a 
+              href="mailto:ha1647@nyu.edu"
+              target="blank"
+              aria-label="Envelope"
+              class="fa fa-envelope">
+            </a>
+            <!-- <div class="hide">ha1647@nyu.edu</div> -->
+
+          </div>
         </ul>
+
+        
 
       </nav>
     </div>
@@ -74,7 +123,7 @@
 <footer class="footer">
   <div class="footer-content">
       <!-- <hr class="class-divider-thin" /> -->
-      <div class="footer-copyright">&copy; 2025 Hiba Assamaouat. All rights reserved.</div>
+      <div class="footer-copyright">&copy; 2025 Hiba Assamaouat.</div>
       <div class="footer-signature">H♤A</div>
       <div class="footer-socials">
         <!-- LinkedIn Icon -->
@@ -105,6 +154,23 @@
       </div>
   </div> 
 </footer>
+
+<!-- JAVASCRIPT IMPLEMENTATION -->
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      if (sidebar.style.display === "flex") {
+        sidebar.style.display = "none";
+      } else {
+        sidebar.style.display = "flex";
+      }
+    }
+
+    function closeSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = "none";
+    }
+  </script>
 
 </body>
 </html>
