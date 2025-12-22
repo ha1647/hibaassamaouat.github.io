@@ -17,6 +17,7 @@
     font-style: normal;
     /* margin: 10px 50px; */
     box-sizing: border-box;
+    line-height: 1.6;
 }
 
 /* * { outline: 1px solid rgb(161, 77, 77,0.5); } */
@@ -212,12 +213,12 @@ li a.active {
 /* MAIN CONTENT */
 .main-content { /* main content FOR LANDING PAGE */
   margin-top: 100px; /* to avoid content being hidden behind the fixed navbar */
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
   justify-self: center;
 
   display: grid;
   grid-template-columns: 2.5fr 1fr;
-  gap: 4rem;
+  gap: 10rem;
 
   align-items: start;
   max-width: 1200px;
@@ -281,7 +282,7 @@ li a.active {
   justify-self: center;
   gap: 1rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .landing-socials-item{
   text-decoration: none;
@@ -290,7 +291,31 @@ li a.active {
 }
 .landing-socials-item:hover{
   font-weight: 600;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+}
+
+.current-interest{
+  justify-self: left;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+
+  align-items: start;
+  /* max-width: 1200px; */
+}
+.current-interest-content{
+  max-width: 680px;
+}
+.interest-link{
+  text-decoration: none;
+  color: #af550f;
+  transition: 0.2s ease-in-out;
+  cursor: default;
+}
+.interest-link:hover{
+  color: #1c3752;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 600px) {
@@ -344,6 +369,7 @@ li a.active {
 
 .footer-signature:hover{
   color: #af550f;
+  transform: scale(1.1);
 }
 
 .footer-socials{
