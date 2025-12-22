@@ -80,7 +80,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75rem 4rem;
+  padding: 0.75rem 6rem;
 
   /* attempting a separation from the fixed header and the rest of the page */
   /* will require some .js incorporation */
@@ -103,8 +103,8 @@ ul {
 
 li {
     float: left;
-    margin: 0 5px;
-    padding: 1rem 2rem;
+    margin: 0 2.5px;
+    padding: 1rem 1rem;
 }
 
 li a{

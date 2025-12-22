@@ -53,7 +53,12 @@ Let's get coding!
 `22-12-2025` <br>
   - [x] (12-1am) finished the navigation bar responsive to window size (sidebar)
   - [x] (1pm) few touch-ups on the navigation sidebar
-  - [ ] (5pm) fill main content of landing page
+  - [x] (5pm) fill main content of landing page
+
+---
+`23-12-2025` <br>
+  - [x] (12am) landing page completed
+  - [ ] Experience page design/look and feel
 
 ---
 `25-12-2025` <br>
