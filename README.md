@@ -59,7 +59,6 @@ Let's get coding!
 `23-12-2025` <br>
   - [x] (12am) landing page completed
   - [x] Experience page design/look and feel
-  - [ ] Code the `Experience` page
 
 The `Experience` page should look something like this, also brief and a short read, it will also invite the visitor to check out some highlited projects.
   <img src="images/readme-images/ExperiencePage.png" alt="Experience Page">
@@ -72,6 +71,10 @@ But it's okay, in the meantime, the engineering projects are compiled in a pdf P
 `Blog` and the searchbar should not take long to make, plus they are on a low priority at the moment.
 
 Now, before starting the codes for the rest of the pages, I need to decide whether I will be creating individual CSS files for each one. And the answer is yes. If along the way, I need to configure an element that will turn out to be useful across all the pages, then I will simply place it in the main styles.css file.
+
+---
+`24-12-2025` <br>
+  - [ ] (12am) Code the `Experience` page (almost finished)
 
 ---
 `25-12-2025` <br>
