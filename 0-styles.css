@@ -21,6 +21,16 @@
 }
 /* * { outline: 1px solid rgb(161, 77, 77,0.5); } */
 
+h1{
+  font-weight: 600;
+  font-size: 16pt;
+}
+h2{
+  font-weight: 600;
+  font-size: 14pt;
+  color: #1c3752;
+}
+
 /* default link styling */
 .inline-link{
   position: relative;

@@ -33,11 +33,11 @@ Updated configuration and contents:<br>
 The look and feel of the page are first visualized on a design app. Could be Figma, Powerpoint, Keynote, etc. I use Freeform. Using my initial design along with my peers' personal websites, I put together and edit the first using the fonts and palette until I reach the configuration I am satisfied with. My goal is to keep things minimal and, as described in the `Home` tab description, to make it able to stand alone, with all the necessary information for a recruiter without needing to search for the fundamental things about me elsewhere.
 It should look something like the following:
 
-<img src="images/readme-images/LandingPage.png" alt="Landing Page">
+  <img src="images/readme-images/LandingPage.png" alt="Landing Page">
 
 The palette was not changed from the previous version of the website:
 
-<img src="images/readme-images/Palette.png" alt="Palette" width="200">
+  <img src="images/readme-images/Palette.png" alt="Palette" width="200">
 
 The idea is to keep things simple. Any pizzazz or fancy fonts can be dedicated in the art and design projects.
 
@@ -58,10 +58,25 @@ Let's get coding!
 ---
 `23-12-2025` <br>
   - [x] (12am) landing page completed
-  - [ ] Experience page design/look and feel
+  - [x] Experience page design/look and feel
+  - [ ] Code the `Experience` page
+
+The `Experience` page should look something like this, also brief and a short read, it will also invite the visitor to check out some highlited projects.
+  <img src="images/readme-images/ExperiencePage.png" alt="Experience Page">
+
+I also made the `Projects` page look and feel. I want it to be in the form of a filtered gallery where the visitor can go through the `Engineering` projects' tab, the `Design`, `Art`, and `Community` Projects. This is a more dynamic type of page, so it will most likely take the longest to code up!
+  <img src="images/readme-images/ProjectsPage.png" alt="Projects Page">
+
+But it's okay, in the meantime, the engineering projects are compiled in a pdf Portfolio available in the `Experience` Page.
+
+`Blog` and the searchbar should not take long to make, plus they are on a low priority at the moment.
+
+Now, before starting the codes for the rest of the pages, I need to decide whether I will be creating individual CSS files for each one. And the answer is yes. If along the way, I need to configure an element that will turn out to be useful across all the pages, then I will simply place it in the main styles.css file.
 
 ---
 `25-12-2025` <br>
+  - [ ] deploy the github page, even if unfinished
+  - [ ] ask for feedback on current page
   - [ ] fix favicon display
   - [ ] 404 not found page
   - [ ] MVP complete
@@ -75,3 +90,30 @@ Let's get coding!
 I am the sole author of this public repository and claim all this work to be mine. I invite any new coder to use my code as a reference but to implement their own, I tried to make it as clear and simple as possible for all.
 
 I format the commits as such `daydatemonthhourminute`, to keep track of all the changes on GitHub and GitHub Desktop. For example the next commit I am doing will be: `mon15dec1354`.
+
+## Useful How To's
+Some cool tutortials of css and js features I might need in the future!
+  - [https://www.w3schools.com/howto/howto_js_popup.asp](W3Schools-Popups)
+  - [https://www.w3schools.com/howto/howto_css_signup_form.asp](W3Schools-SignUpForms) 
+  - [https://www.w3schools.com/howto/howto_js_countdown.asp](W3Schools-CountdownTimer)
+  - [https://www.w3schools.com/howto/howto_js_filter_elements.asp](W3Schools-FilterElements)
+  - [https://www.w3schools.com/howto/howto_js_scroll_to_top.asp](W3Schools-ScrollAppears)
+  - [https://www.w3schools.com/howto/howto_js_portfolio_filter.asp](W3Schools-PortfolioGallery)
+  - [https://www.w3schools.com/howto/howto_css_animated_search.asp](W3Schools-AnimatedSearchForm)
+  - [https://www.w3schools.com/howto/howto_css_overlay.asp](W3Schools-PageOverlayEffect)
+  - [https://www.w3schools.com/howto/howto_js_autocomplete.asp](W3Schools-Autocomplete)
+  - [https://www.w3schools.com/howto/howto_css_cards.asp](W3Schools-Cards)
+  - [https://www.w3schools.com/howto/howto_js_todolist.asp](W3Schools-ToDoList)
+  - [https://www.w3schools.com/howto/howto_css_breadcrumbs.asp](W3Schools-Breadcrumbs(Directory))
+  - [https://www.w3schools.com/howto/howto_css_image_sticky.asp](W3Schools-StickyImage(GoodforBlog))
+  - [https://www.w3schools.com/howto/howto_css_responsive_text.asp](W3Schools-ResponsiveTextSize(IMPORTANT)) <-- NEED
+  - [https://www.w3schools.com/howto/howto_js_read_more.asp](W3Schools-ReadMoreReadLess)
+  - [https://www.w3schools.com/howto/howto_js_sidenav.asp](W3Schools-SideNavigation)
+  - [https://www.w3schools.com/howto/howto_css_modals.asp](W3Schools-ModalBox) <-- NEED
+  - [](W3Schools-)
+  - [](W3Schools-)
+  - [](W3Schools-)
+  - [](W3Schools-)
+  - [](W3Schools-)
+  - [](W3Schools-)
+  - [](W3Schools-)
