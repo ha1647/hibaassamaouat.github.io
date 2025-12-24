@@ -75,13 +75,19 @@ Now, before starting the codes for the rest of the pages, I need to decide wheth
 ---
 `24-12-2025` <br>
   - [x] (12am) Code the `Experience` page (almost finished)
+  - [x] (9pm) `Experience` page complete
+  - [ ] (10pm) begin `Projects` page
 
+The `Projects` page is likely going to take longer to complete. Let's clear up the filtered gallery into smaller tasks:
+  - [ ] 
 ---
 `25-12-2025` <br>
   - [ ] deploy the github page, even if unfinished
   - [ ] ask for feedback on current page
   - [ ] fix favicon display
   - [ ] 404 not found page
+  - [ ] UX Testing
+  - [ ] last @media checks and updates
   - [ ] MVP complete
   - [ ] Begin editing the Linkedin post
 ---
