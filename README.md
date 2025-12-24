@@ -74,7 +74,7 @@ Now, before starting the codes for the rest of the pages, I need to decide wheth
 
 ---
 `24-12-2025` <br>
-  - [ ] (12am) Code the `Experience` page (almost finished)
+  - [x] (12am) Code the `Experience` page (almost finished)
 
 ---
 `25-12-2025` <br>
