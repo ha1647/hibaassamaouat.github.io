@@ -31,6 +31,9 @@
 </head>
 
 <body>
+  <div class="mobile-warning">
+    This website is not yet compatible with small screens.
+  </div>
 
   <!-- Navigation Bar -->
   <header>
@@ -107,6 +110,20 @@
         Here you can find a selection of projects I had the opportunity to work on, ranging from engineering work to art, design, and community.<br>
         By pressing on a project, you can access the details of it along with some personal comments including the lessons learnt!
       </p>
+
+      <div class="gallery-filters">
+        <div class="filter-section">
+          <button class="filter-button active" onclick="filterSelection('all')"><span> ALL </span></button>
+          <button class="filter-button" onclick="filterSelection('engineering')"><span> ENGINEERING </span></button>
+          <button class="filter-button" onclick="filterSelection('design')"> <span> DESIGN </span></button>
+          <button class="filter-button" onclick="filterSelection('art')"><span> ART </span></button>
+          <button class="filter-button" onclick="filterSelection('community')"><span> COMMUNITY </span></button>
+        </div>
+        
+        <div class="filter-divider"></div>
+      </div>
+
+
     </section>
   </div>
   

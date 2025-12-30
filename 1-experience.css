@@ -12,7 +12,7 @@
   padding: 1rem 10rem;
   justify-self: left;
 
-  max-width: 1800px;
+  /* max-width: 18000px; */
 }
 
 .experience-content{
@@ -162,6 +162,12 @@
   }
   .card-media {
     display: none; /* we just hide the image on small screens */
+  }
+}
+
+@media (max-width: 1440px){
+  .card{
+     height: 10vw;
   }
 }
 

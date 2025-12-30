@@ -76,12 +76,23 @@ Now, before starting the codes for the rest of the pages, I need to decide wheth
 `24-12-2025` <br>
   - [x] (12am) Code the `Experience` page (almost finished)
   - [x] (9pm) `Experience` page complete
-  - [ ] (10pm) begin `Projects` page
+  - [x] (10pm) begin `Projects` page
+
+---
+`30-12-25` <br>
+  - [x] add screen compatibility issue message
 
 The `Projects` page is likely going to take longer to complete. Let's clear up the filtered gallery into smaller tasks:
-  - [ ] 
+  - [ ] gallery main container
+  - [ ] horizontal filter tab list container
+  - [ ] gallery subcontainer
+  - [ ] gallery cards (add data-tags to the bottom of the cards)
+  - [ ] javascript
+  - [ ] ux fixes (transition)
+  - [ ] start designing each project's page
+
 ---
-`25-12-2025` <br>
+`25-01-2026` <br>
   - [ ] deploy the github page, even if unfinished
   - [ ] ask for feedback on current page
   - [ ] fix favicon display
@@ -91,8 +102,8 @@ The `Projects` page is likely going to take longer to complete. Let's clear up t
   - [ ] MVP complete
   - [ ] Begin editing the Linkedin post
 ---
-`29-12-2025` <br>
-  - [ ] Linkedin article posted
+`29-01-2026` <br>
+  - [ ] Change of plans, no Linkedin article posted, no big attention drawn to that is desired for this web dev project
 
 ## About the management of this repository
 

@@ -261,6 +261,27 @@ li a.active {
   max-width: 1200px;
 }
 
+/* Mobile screen size notification */
+.mobile-warning {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #1c3752;
+  color: #FEFBF7;
+  text-align: center;
+  font-size: 0.9rem;
+  z-index: 9999;
+}
+
+@media (max-width: 1000px) {
+  .mobile-warning {
+    display: block;
+  }
+}
+
 .landing-content{
   max-width: 680px;
 }
