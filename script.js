@@ -22,3 +22,8 @@
   function closeSidebar() {
     document.querySelector('.sidebar').classList.remove('active');
   }
+
+
+
+// PROJECTS GALLERY FILTER FUNCTIONS
+ 

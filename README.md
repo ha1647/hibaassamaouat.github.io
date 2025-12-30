@@ -83,8 +83,8 @@ Now, before starting the codes for the rest of the pages, I need to decide wheth
   - [x] add screen compatibility issue message
 
 The `Projects` page is likely going to take longer to complete. Let's clear up the filtered gallery into smaller tasks:
-  - [ ] gallery main container
-  - [ ] horizontal filter tab list container
+  - [x] gallery main container
+  - [x] horizontal filter tab list container
   - [ ] gallery subcontainer
   - [ ] gallery cards (add data-tags to the bottom of the cards)
   - [ ] javascript
