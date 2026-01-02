@@ -92,7 +92,15 @@ The `Projects` page is likely going to take longer to complete. Let's clear up t
   - [ ] start designing each project's page
 
 ---
-`25-01-2026` <br>
+`02-01-26` <br>
+  - [ ] gallery subcontainer
+  - [ ] gallery cards (add data-tags to the bottom of the cards)
+  - [ ] javascript
+  - [ ] ux fixes (transition)
+  - [ ] start designing each project's page
+  - [ ]
+---
+`25-01-26` <br>
   - [ ] deploy the github page, even if unfinished
   - [ ] ask for feedback on current page
   - [ ] fix favicon display
@@ -102,7 +110,7 @@ The `Projects` page is likely going to take longer to complete. Let's clear up t
   - [ ] MVP complete
   - [ ] Begin editing the Linkedin post
 ---
-`29-01-2026` <br>
+`29-01-26` <br>
   - [ ] Change of plans, no Linkedin article posted, no big attention drawn to that is desired for this web dev project
 
 ## About the management of this repository

@@ -92,3 +92,73 @@
   height: 2px;
   background: #1c3752;
 }
+
+
+/* GALLERY ITEMS */
+
+/* Gallery grid */
+#gallery-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card */
+.portfolio-item {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden; /* clips image to rounded corners */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+/* Hover (subtle) */
+.portfolio-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+}
+
+/* Image wrapper */
+.portfolio-image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+/* Image micro-zoom on hover */
+.portfolio-item:hover img {
+  transform: scale(1.04);
+}
+
+/* Content */
+.portfolio-content {
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+.portfolio-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+}
+
+/* Labels */
+.portfolio-labels {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.label {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background: #f0f0f0;
+  color: #444;
+}
