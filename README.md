@@ -93,9 +93,13 @@ The `Projects` page is likely going to take longer to complete. Let's clear up t
 
 ---
 `02-01-26` <br>
-  - [ ] gallery subcontainer
-  - [ ] gallery cards (add data-tags to the bottom of the cards)
-  - [ ] javascript
+  - [x] gallery subcontainer
+  - [x] gallery cards (add data-tags to the bottom of the cards)
+  - [x] javascript
+
+---
+`03-01-26` <br>
+  - [ ] explain js code
   - [ ] ux fixes (transition)
   - [ ] start designing each project's page
   - [ ]

@@ -21,6 +21,10 @@
 }
 /* * { outline: 1px solid rgb(161, 77, 77,0.5); } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1{
   font-weight: 600;
   font-size: 16pt;
@@ -249,8 +253,8 @@ li a.active {
 
 /* MAIN CONTENT */
 .main-content { /* main content FOR LANDING PAGE */
-  margin-top: 100px; /* to avoid content being hidden behind the fixed navbar */
-  padding: 1rem 2rem;
+  margin: 100px auto 0; /* top | left-right auto | bottom */
+  padding: 1rem clamp(1.5rem, 6vw, 10rem);
   justify-self: center;
 
   display: grid;
@@ -258,7 +262,8 @@ li a.active {
   gap: 10rem;
 
   align-items: start;
-  max-width: 1200px;
+  max-width: 1800px;
+  justify-content: center; /* horizontal centering */
 }
 
 /* Mobile screen size notification */
