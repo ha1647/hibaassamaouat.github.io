@@ -26,13 +26,12 @@
 
 
 // PROJECTS GALLERY FILTER FUNCTIONS
- function filterSelection(category) {
+function filterSelection(category, button) {
   const items = document.querySelectorAll('.portfolio-item');
   const buttons = document.querySelectorAll('.filter-button');
 
-  // update active button
   buttons.forEach(btn => btn.classList.remove('active'));
-  event.currentTarget.classList.add('active');
+  button.classList.add('active');
 
   items.forEach(item => {
     const itemCategory = item.dataset.category;
@@ -44,3 +43,23 @@
     }
   });
 }
+
+// GALLERY MODAL OVERLAY
+function openProject() {
+  document.getElementById('projectOverlay').classList.add('active');
+  document.body.style.overflow = 'hidden'; // locks background scroll
+}
+
+function closeProject() {
+  document.getElementById('projectOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {   // allows user to close overlay by pressing "esc" key
+  if (e.key === 'Escape') {
+    const overlay = document.getElementById('projectOverlay');
+    if (overlay.classList.contains('active')) {
+      closeProject();
+    }
+  }
+});

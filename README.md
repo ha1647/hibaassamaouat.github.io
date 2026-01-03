@@ -99,10 +99,38 @@ The `Projects` page is likely going to take longer to complete. Let's clear up t
 
 ---
 `03-01-26` <br>
-  - [ ] explain js code
+  - [x] explain js code
   - [ ] ux fixes (transition)
   - [ ] start designing each project's page
   - [ ]
+
+The portfolio gallery I made was designed to be fun to navigate through, you can select the category you want to check out and the project cards get filtered accordingly. The javascript code is as follows: 
+
+```javascript
+function filterSelection(category) {
+  const items = document.querySelectorAll('.portfolio-item');
+  const buttons = document.querySelectorAll('.filter-button');
+
+  // update active button
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+
+  items.forEach(item => {
+    const itemCategory = item.dataset.category;
+
+    if (category === 'all' || itemCategory === category) {
+      item.classList.remove('hidden');
+    } else {
+      item.classList.add('hidden');
+    }
+  });
+}
+```
+
+This filtering process runs on the browser without reloading the page each time a category is selected. The function takes in the category selected by the user (`All`, `Engineering`, `Design`, `Art`, `Community`). First, the selected button/tab becomes active. Then we loop through all the gallery items and checks the category attributed to the items. If the selected category is `All`, or matches the selected category, the card remains visible, otherwise, it is hidden using a css class pre-defined. So it is all just a string matching game.
+
+Now we wish to design the actual project pages that the user can access by clicking on one of the cards. The UI choice we will go for is the <b>modal overlay</b>
+
 ---
 `25-01-26` <br>
   - [ ] deploy the github page, even if unfinished
