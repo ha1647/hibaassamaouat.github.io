@@ -297,8 +297,13 @@
 <!-- MODAL OVERLAY (PROJECT PAGES) -->
  <!-- Project Overlay -->
 <div class="project-overlay" id="projectOverlay">
+
   <div class="project-modal">
-    <button class="modal-close" onclick="closeProject()">x</button>
+      <button class="modal-close" onclick="closeProject()" aria-label="Close project">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+      </button>
 
     <div class="modal-content">
       <h2>Project title</h2>

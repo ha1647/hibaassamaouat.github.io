@@ -4,7 +4,7 @@
 /* DARK BROWN color: #4e3e30; */
 /* ORANGE color: #af550f; */
 
-/* * { outline: 1px solid rgb(161, 77, 77,0.5); } */
+* { outline: 1px solid rgb(161, 77, 77,0.5); }
 
 
 .projects-wrapper{
@@ -211,10 +211,11 @@
 
 /* Modal card */
 .project-modal {
-  background: #fff;
-  width: min(680px, 90vw);
+  background: #FEFBF7;
+  width: min(900px, 90vw);
   max-height: 85vh;
   border-radius: 18px;
+  overflow: hidden;
   box-shadow: 0 20px 60px rgba(0,0,0,0.25);
   transform: scale(0.96);
   transition: transform 0.3s ease;
@@ -231,16 +232,34 @@
 .modal-content {
   padding: 1.5rem 1.7rem;
   overflow-y: auto;
+  flex: 1;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 /* Close button */
 .modal-close {
+  position: sticky;
+  top: 0;
   align-self: flex-end;
   background: none;
   border: none;
-  font-size: 1.4rem;
-  padding: 0.8rem 1rem 0;
+  padding: 1rem;
   cursor: pointer;
+  z-index: 2;
+}
+
+.modal-close svg {
+  width: 24px;
+  height: 24px;
+  fill: #1c3752;
 }
 
 

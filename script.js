@@ -63,3 +63,15 @@ document.addEventListener('keydown', e => {   // allows user to close overlay by
     }
   }
 });
+
+// Close project by clicking away
+const overlay = document.getElementById('projectOverlay');
+const modal = overlay.querySelector('.project-modal');
+
+overlay.addEventListener('click', () => {
+  closeProject();
+});
+
+modal.addEventListener('click', e => {
+  e.stopPropagation(); // prevents closing when clicking inside modal
+});

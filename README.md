@@ -131,6 +131,9 @@ This filtering process runs on the browser without reloading the page each time 
 
 Now we wish to design the actual project pages that the user can access by clicking on one of the cards. The UI choice we will go for is the <b>modal overlay</b>
 
+`04-01-26` <br>
+  - [ ] continue working on the modal overlay
+
 ---
 `25-01-26` <br>
   - [ ] deploy the github page, even if unfinished
