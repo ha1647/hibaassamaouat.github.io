@@ -1,0 +1,65 @@
+Here is the list of labels used for the project library.
+
+☛ Project Type
+
+    Hardware
+
+    Software
+
+    Embedded Systems
+
+    PCB Design
+
+    Signal Processing
+
+    Control Systems
+
+    Web Development
+
+    Research
+
+    Experimental
+
+    Data Analysis
+
+☛ Technical Focus
+
+    MATLAB
+
+    Python
+
+    C++
+
+    VHDL / FPGA
+
+    SDR
+
+    Sensors
+
+    DSP
+
+    RF
+
+    Machine Learning
+
+    CAD
+
+☛ Application / Domain
+
+    Wireless Communication
+
+    Biomedical
+
+    Sustainability
+
+    Recycling
+
+    IoT
+
+    Robotics
+
+    Instrumentation
+
+    Energy
+
+    Human–Machine Interface

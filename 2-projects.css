@@ -4,7 +4,7 @@
 /* DARK BROWN color: #4e3e30; */
 /* ORANGE color: #af550f; */
 
-/* * { outline: 1px solid rgb(161, 77, 77,0.5); } */
+/* * { outline: 1px solid rgb(161, 77, 77, 0.5); } */
 
 
 .projects-wrapper{
@@ -214,11 +214,14 @@
   background: #FEFBF7;
   width: min(900px, 90vw);
   max-height: 85vh;
+
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+
   transform: scale(0.96);
   transition: transform 0.3s ease;
+
   display: flex;
   flex-direction: column;
 }
@@ -230,9 +233,12 @@
 
 /* Scrollable content */
 .modal-content {
-  padding: 1.5rem 1.7rem;
+  padding: 0.2rem 1.7rem;
   overflow-y: auto;
   flex: 1;
+  margin: 0 2rem;
+
+  font-size: 11pt;
 }
 
 .modal-header {
@@ -253,7 +259,7 @@
 
   border: none;
   padding: 1rem;
-  margin-bottom: 1px;
+  margin-bottom: 0.1rem;
 
   cursor: pointer;
   z-index: 2;
@@ -296,15 +302,24 @@
   gap: 1rem;
 }
 /* Images */
+.modal-image-card{
+  justify-items: center;
+}
 .modal-image-card img {
   width: 200px;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
   display: block;
-  align-self: center;
 }
+.card-caption{
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
 
+  color: #1c3752b0;
+  font-size: 8pt;
+  font-style: italic;
+}
 /* Mobile safety */
 @media (max-width: 600px) {
   .modal-image-card.two {

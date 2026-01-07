@@ -19,7 +19,7 @@
     box-sizing: border-box;
     line-height: 1.6;
 }
-* { outline: 1px solid rgb(161, 77, 77,0.5); }
+/* * { outline: 1px solid rgb(161, 77, 77,0.5); } */
 
 html {
   scroll-behavior: smooth;
@@ -286,6 +286,27 @@ li a.active {
     display: block;
   }
 }
+
+/* content coming soon... notification */
+.coming-soon {
+  width: 100%;
+  margin-top: 20%;
+  margin-bottom: 80%;
+  padding: 0.75rem 1rem;
+
+  background: #FEFBF7;
+  color: #1c3752;
+  border-width: 2px;
+  border-color: #1c3752;
+
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  border-radius: 6px;
+}
+
 
 .landing-content{
   max-width: 680px;
