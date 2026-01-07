@@ -100,9 +100,7 @@ The `Projects` page is likely going to take longer to complete. Let's clear up t
 ---
 `03-01-26` <br>
   - [x] explain js code
-  - [ ] ux fixes (transition)
-  - [ ] start designing each project's page
-  - [ ]
+  - [ ] ux fixes
 
 The portfolio gallery I made was designed to be fun to navigate through, you can select the category you want to check out and the project cards get filtered accordingly. The javascript code is as follows: 
 
@@ -132,8 +130,13 @@ This filtering process runs on the browser without reloading the page each time 
 Now we wish to design the actual project pages that the user can access by clicking on one of the cards. The UI choice we will go for is the <b>modal overlay</b>
 
 `04-01-26` <br>
-  - [ ] continue working on the modal overlay
+  - [x] continue working on the modal overlay
+  - [x] start designing project page
 
+`07-01-26` <br>
+  - [x] modal overlay work
+  - [x] gathering media for projects
+  - [ ] add project footer
 ---
 `25-01-26` <br>
   - [ ] deploy the github page, even if unfinished

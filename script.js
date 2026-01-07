@@ -45,9 +45,29 @@ function filterSelection(category, button) {
 }
 
 // GALLERY MODAL OVERLAY
-function openProject() {
+function openProject(card) {
   document.getElementById('projectOverlay').classList.add('active');
   document.body.style.overflow = 'hidden'; // locks background scroll
+
+  const projectId = card.dataset.project;
+  const overlay = document.getElementById('projectOverlay');
+
+  // hide all articles
+  document.querySelectorAll('.project-article').forEach(article => {
+    article.style.display = 'none';
+  });
+
+  // displays the matching one
+  const activeArticle = overlay.querySelector(
+    `.project-article[data-project="${projectId}"]`
+  );
+
+  if (activeArticle) {
+    activeArticle.style.display = 'block';
+  }
+
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
 }
 
 function closeProject() {
