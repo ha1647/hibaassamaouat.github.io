@@ -132,12 +132,25 @@ Now we wish to design the actual project pages that the user can access by click
 `04-01-26` <br>
   - [x] continue working on the modal overlay
   - [x] start designing project page
+---
 
 `07-01-26` <br>
   - [x] modal overlay work
   - [x] gathering media for projects
-  - [ ] add project footer
+  - [x] add project footer
+  - [x] added softwares' logos in each project
+
+Gallery is done. Articles will need to be written down and proofread.
+
 ---
+
+`08-01-26` <br>
+  - [x] adding more projects to the gallery
+  - [x] editing card thumbails and including them
+  - [ ] moving on to blog page
+
+---
+
 `25-01-26` <br>
   - [ ] deploy the github page, even if unfinished
   - [ ] ask for feedback on current page
