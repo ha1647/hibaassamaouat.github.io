@@ -4,18 +4,18 @@
 /* DARK BROWN color: #4e3e30; */
 /* ORANGE color: #af550f; */
 
-/* * { outline: 1px solid rgb(161, 77, 77, 0.5); } */
+* { outline: 1px solid rgb(161, 77, 77, 0.5); }
 
 
 .projects-wrapper{
   /* margin-top: 100px; to avoid content being hidden behind the fixed navbar */
   margin: 100px auto 0; /* top | left-right auto | bottom */
   padding: 1rem clamp(1.5rem, 6vw, 10rem);
-  justify-self: left;
+  /* justify-self: left; */
   max-width: 1800px;
   
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .projects-content{
