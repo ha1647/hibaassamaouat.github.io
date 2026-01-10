@@ -143,10 +143,19 @@ Now we wish to design the actual project pages that the user can access by click
 Gallery is done. Articles will need to be written down and proofread.
 
 ---
-
 `08-01-26` <br>
   - [x] adding more projects to the gallery
   - [x] editing card thumbails and including them
+
+---
+`09-01-26` <br>
+  - [ ] deploy github page
+  - [ ] start blog page
+
+I've been thinking about the blog page for a while now. About what it should look like, what type of content should live there.
+After looking around
+---
+`10-01-26` <br>
   - [ ] moving on to blog page
 
 ---
