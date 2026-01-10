@@ -384,13 +384,14 @@ li a.active {
 
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /* gap: rem; */
+  column-gap: 0.6rem;
 
   align-items: start;
   /* max-width: 1200px; */
 }
 .current-interest-content{
-  max-width: 680px;
+  font-size: 10pt;
+  max-width: 560px;
 }
 .interest-link{
   text-decoration: none;
