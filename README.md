@@ -149,15 +149,21 @@ Gallery is done. Articles will need to be written down and proofread.
 
 ---
 `09-01-26` <br>
-  - [ ] deploy github page
-  - [ ] start blog page
+  - [x] deploy github page
+  - [x] start blog page
 
-I've been thinking about the blog page for a while now. About what it should look like, what type of content should live there.
-After looking around
 ---
-`10-01-26` <br>
+`13-01-26` <br>
+The page is now deployed and is technically accessible to anyone with the link (e.g. through my cv) or my GitHub profile. Therefore I must now set a proper deadline for the MVP to be complete. I think that by `25-01-26`, the website should be nice and clean, no more formatting issues, with my first blog post ready to be published and announced 
+
+  - [x] 404 not found page <br>
+  <img src="images/readme-images/404Page.png" alt="404 Page" width="200">
+
   - [ ] moving on to blog page
-  - [ ]
+
+I've been thinking about the blog page for a while now. About what it should look like, what type of content should live there. After looking around, I think I will make the blog page in form of a news page, for fun, since it's the point of this tab. I want to make writing articles fun.
+
+  - [ ] 
 
 ---
 
