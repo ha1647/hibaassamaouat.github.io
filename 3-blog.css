@@ -10,8 +10,157 @@
 .blog-wrapper{
   /* margin-top: 100px; to avoid content being hidden behind the fixed navbar */
   margin: 100px auto 0; /* top | left-right auto | bottom */
-  padding: 1rem clamp(1.5rem, 6vw, 10rem);
+  padding: 0.1rem clamp(1.5rem, 6vw, 10rem);
   max-width: 1800px;
   justify-content: center;
 }
 
+.blog-title {
+  font-family: "Playfair Display";
+  font-size: 28pt;
+  font-weight: 700;
+  color: #c65d21;
+  margin-bottom: 40px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.featured-post {
+  position: relative;
+}
+
+.featured-post img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.featured-content {
+  margin-top: 20px;
+}
+
+.featured-content h2 {
+  font-size: 2em;
+  color: #1a3a52;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.featured-content p {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.7;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  color: #c65d21;
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.read-more::after {
+  content: '→';
+  margin-left: 8px;
+}
+
+.sidebar-featured {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-post img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.sidebar-post h3 {
+  font-size: 1.5em;
+  color: #1a3a52;
+  font-weight: 700;
+}
+
+.blog-list {
+  border-top: 2px solid #1a3a52;
+  padding-top: 40px;
+}
+
+.blog-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 30px;
+  padding: 30px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.blog-item:last-child {
+  border-bottom: none;
+}
+
+.blog-item-meta h4 {
+  font-size: 1.3em;
+  color: #c65d21;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.blog-item-meta .date {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.blog-item-content p {
+  color: #555;
+  line-height: 1.7;
+}
+
+@media (max-width: 968px) {
+  .featured-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .blog-item {
+      grid-template-columns: 1fr;
+      gap: 15px;
+  }
+
+  .blog-title {
+      font-size: 2.5em;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+      gap: 20px;
+      font-size: 0.9em;
+  }
+
+  .logo {
+      font-size: 1.5em;
+  }
+
+  .blog-title {
+      font-size: 2em;
+  }
+
+  .featured-content h2 {
+      font-size: 1.5em;
+  }
+}

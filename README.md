@@ -157,22 +157,29 @@ Gallery is done. Articles will need to be written down and proofread.
 The page is now deployed and is technically accessible to anyone with the link (e.g. through my cv) or my GitHub profile. Therefore I must now set a proper deadline for the MVP to be complete. I think that by `25-01-26`, the website should be nice and clean, no more formatting issues, with my first blog post ready to be published and announced 
 
   - [x] 404 not found page <br>
-  <img src="images/readme-images/404Page.png" alt="404 Page" width="200">
+  <img src="images/readme-images/404Page.png" alt="404 Page">
 
   - [ ] moving on to blog page
+  - [ ] fix projects page and check deployed
 
 I've been thinking about the blog page for a while now. About what it should look like, what type of content should live there. After looking around, I think I will make the blog page in form of a news page, for fun, since it's the point of this tab. I want to make writing articles fun.
 
-  - [ ] 
+  <img src="images/readme-images/BlogPage.png" alt="Blog Page">
 
 ---
+`14-01-26` <br>
+Petit point sur ce qu'il reste à faire principalement.
+  1. Blog page
+  2. Fix the format (mostly padding and margins) to make it uniform throughout all pages
+  3. Make the webpage compatible with small screens
+
+Trying Claude today.
+---
+
 
 `25-01-26` <br>
   - [ ] deploy the github page, even if unfinished
   - [ ] ask for feedback on current page
-  - [ ] fix favicon display
-  - [ ] 404 not found page
-  - [ ] UX Testing
   - [ ] last @media checks and updates
   - [ ] MVP complete
   - [ ] Begin editing the Linkedin post
