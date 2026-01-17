@@ -265,6 +265,15 @@ li a.active {
   max-width: 1800px;
   justify-content: center; /* horizontal centering */
 }
+/* Blur overlay */
+.construction-overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* Safari */
+  background: rgba(255, 255, 255, 0.15); /* optional tint */
+  z-index: 999;
+}
 .construction {
   position: fixed;
   top: 50%;
@@ -272,8 +281,8 @@ li a.active {
   transform: translate(-50%, -50%);
 
   /* background: linear-gradient(135deg, #1c3752 0%, #4E3E30 100%); */
-  background: #1c3752;
-  color: #FEFBF7;
+  background: #FEFBF7;
+  color: #1c3752;
 
   padding: 4rem 6rem;
 
@@ -284,16 +293,17 @@ li a.active {
 
   border-radius: 8px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  border: 2px solid #FEFBF7;
+  border: 2px solid #1c3752;
   
   z-index: 1000;
   max-width: 80%;
 }
+
 .construction svg {
   vertical-align: middle;
   background: transparent;
-
 }
+
 /* Mobile screen size notification */
 .mobile-warning {
   display: none;
