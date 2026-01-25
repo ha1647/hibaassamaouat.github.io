@@ -11,7 +11,7 @@
   /* margin-top: 100px; /* to avoid content being hidden behind the fixed navbar 
   padding: 1rem 10rem; */
 
-  margin: 100px auto 0; /* top | left-right auto | bottom */
+  margin: 100px 5vw 0; /* top | left-right auto | bottom */
   padding: 1rem clamp(1.5rem, 6vw, 10rem);
   max-width: 1800px;
 

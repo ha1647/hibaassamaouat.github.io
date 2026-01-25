@@ -174,15 +174,33 @@ Petit point sur ce qu'il reste à faire principalement.
   3. Make the webpage compatible with small screens
 
 Trying Claude today.
+
 ---
+`17-01-26` <br>
+  - [ ] "page under construction" notif
+  - [ ] updates documents
+  - [ ] 
 
-
+---
 `25-01-26` <br>
-  - [ ] deploy the github page, even if unfinished
+this list of goals was scheduled for this date, some things were checked off a while ago
+  - [x] deploy the github page, even if unfinished
   - [ ] ask for feedback on current page
   - [ ] last @media checks and updates
-  - [ ] MVP complete
+  - [x] MVP complete
   - [ ] Begin editing the Linkedin post
+
+no linkedin post announcing the deployment of my website will be made after all. The website will be simply directed to when I post about a project or article.
+
+### today's tasks
+  - [] i'm not so satisfied with the background color and main text color anymore. it's not bold enough. Even looking at it gives me a headache for some reason.
+  - [] in `Home`, CV should be more obvious in the first page, easily accessible, right now it is too subtle
+  - [] in `Home`, the currently reading is not so relevant, i'm considering removing it.
+  - [] `Home`, `Experience`, and `Blog` need to have their margins fixed, too wide.
+  - [] `Projects` gallery images are not appealing, they're overloaded, there's too much white, and they don't make you want to click.
+  - [] I might change the main font (IBM Plex Sans) further down the line
+  - [] add `CV` tab
+ 
 ---
 `29-01-26` <br>
   - [ ] Change of plans, no Linkedin article posted, no big attention drawn to that is desired for this web dev project

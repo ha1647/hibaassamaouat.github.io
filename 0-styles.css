@@ -72,8 +72,8 @@ h2{
   align-items: center;
   justify-content: space-between;
   /* box-sizing: border-box; */
-  
 }
+
 .hiba-assamaouat-logo {
   font-family: "Playfair Display";
     font-weight: 400;
@@ -253,18 +253,25 @@ li a.active {
 
 /* MAIN CONTENT */
 .main-content { /* main content FOR LANDING PAGE */
-  margin: 100px auto 0; /* top | left-right auto | bottom */
+  /* margin: 100px auto 0; top | left-right auto | bottom */
+  margin: 100px 5vw 0; /* top | left-right auto | bottom */
   padding: 1rem clamp(1.5rem, 6vw, 10rem);
   justify-self: center;
 
   display: grid;
   grid-template-columns: 2.5fr 1fr;
-  gap: 10rem;
+  gap: 6rem;
 
   align-items: start;
   max-width: 1800px;
   justify-content: center; /* horizontal centering */
 }
+
+.landing-content{
+  margin-top: 40px;
+  max-width: 680px;
+}
+
 /* Blur overlay */
 .construction-overlay {
   position: fixed;
@@ -345,10 +352,6 @@ li a.active {
   border-radius: 6px;
 }
 
-
-.landing-content{
-  max-width: 680px;
-}
 
 .nyu{
   font-weight: 500;
