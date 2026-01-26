@@ -194,9 +194,9 @@ this list of goals was scheduled for this date, some things were checked off a w
   - `Home`, `Experience`, and `Blog` need to have their margins fixed, too wide.
   - `Projects` gallery images are not appealing, they're overloaded, there's too much white, and they don't make you want to click.
   - I might change the main font (IBM Plex Sans) further down the line
-
+<br> tasks
   - [x] add `CV` tab
-  - [] test new palette and main font
+  - [ ] test new palette and main font
  
 ---
 `29-01-26` <br>
@@ -213,27 +213,21 @@ I format the commits as such `daydatemonthhourminute`, to keep track of all the 
 
 ## Useful How To's
 Some cool tutortials of css and js features I might need in the future!
-  - [https://www.w3schools.com/howto/howto_js_popup.asp](W3Schools-Popups)
-  - [https://www.w3schools.com/howto/howto_css_signup_form.asp](W3Schools-SignUpForms) 
-  - [https://www.w3schools.com/howto/howto_js_countdown.asp](W3Schools-CountdownTimer)
-  - [https://www.w3schools.com/howto/howto_js_filter_elements.asp](W3Schools-FilterElements)
-  - [https://www.w3schools.com/howto/howto_js_scroll_to_top.asp](W3Schools-ScrollAppears)
-  - [https://www.w3schools.com/howto/howto_js_portfolio_filter.asp](W3Schools-PortfolioGallery)
-  - [https://www.w3schools.com/howto/howto_css_animated_search.asp](W3Schools-AnimatedSearchForm)
-  - [https://www.w3schools.com/howto/howto_css_overlay.asp](W3Schools-PageOverlayEffect)
-  - [https://www.w3schools.com/howto/howto_js_autocomplete.asp](W3Schools-Autocomplete)
-  - [https://www.w3schools.com/howto/howto_css_cards.asp](W3Schools-Cards)
-  - [https://www.w3schools.com/howto/howto_js_todolist.asp](W3Schools-ToDoList)
-  - [https://www.w3schools.com/howto/howto_css_breadcrumbs.asp](W3Schools-Breadcrumbs(Directory))
-  - [https://www.w3schools.com/howto/howto_css_image_sticky.asp](W3Schools-StickyImage(GoodforBlog))
-  - [https://www.w3schools.com/howto/howto_css_responsive_text.asp](W3Schools-ResponsiveTextSize(IMPORTANT)) <-- NEED
-  - [https://www.w3schools.com/howto/howto_js_read_more.asp](W3Schools-ReadMoreReadLess)
-  - [https://www.w3schools.com/howto/howto_js_sidenav.asp](W3Schools-SideNavigation)
-  - [https://www.w3schools.com/howto/howto_css_modals.asp](W3Schools-ModalBox) <-- NEED
-  - [](W3Schools-)
-  - [](W3Schools-)
-  - [](W3Schools-)
-  - [](W3Schools-)
-  - [](W3Schools-)
-  - [](W3Schools-)
-  - [](W3Schools-)
+- [uiverse.io](https://uiverse.io)
+- [W3Schools-Popups](https://www.w3schools.com/howto/howto_js_popup.asp)
+- [W3Schools-SignUpForms](https://www.w3schools.com/howto/howto_css_signup_form.asp)
+- [W3Schools-CountdownTimer](https://www.w3schools.com/howto/howto_js_countdown.asp)
+- [W3Schools-FilterElements](https://www.w3schools.com/howto/howto_js_filter_elements.asp)
+- [W3Schools-ScrollAppears](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+- [W3Schools-PortfolioGallery](https://www.w3schools.com/howto/howto_js_portfolio_filter.asp)
+- [W3Schools-AnimatedSearchForm](https://www.w3schools.com/howto/howto_css_animated_search.asp)
+- [W3Schools-PageOverlayEffect](https://www.w3schools.com/howto/howto_css_overlay.asp)
+- [W3Schools-Autocomplete](https://www.w3schools.com/howto/howto_js_autocomplete.asp)
+- [W3Schools-Cards](https://www.w3schools.com/howto/howto_css_cards.asp)
+- [W3Schools-ToDoList](https://www.w3schools.com/howto/howto_js_todolist.asp)
+- [W3Schools-Breadcrumbs(Directory)](https://www.w3schools.com/howto/howto_css_breadcrumbs.asp)
+- [W3Schools-StickyImage(GoodforBlog)](https://www.w3schools.com/howto/howto_css_image_sticky.asp)
+- [W3Schools-ResponsiveTextSize(IMPORTANT)](https://www.w3schools.com/howto/howto_css_responsive_text.asp)
+- [W3Schools-ReadMoreReadLess](https://www.w3schools.com/howto/howto_js_read_more.asp)
+- [W3Schools-SideNavigation](https://www.w3schools.com/howto/howto_js_sidenav.asp)
+- [W3Schools-ModalBox](https://www.w3schools.com/howto/howto_css_modals.asp)
