@@ -10,7 +10,7 @@
 /* Global and base styling */
 * {
     background-color: #FEFBF7;
-    color: #4E3E30; /* Text color */
+    color: #332921; /* Text color */
     font-family: "IBM Plex Sans", sans-serif; 
     font-optical-sizing: auto; /* Auto-scaling for better readability */
     font-weight: 400; /* Corrected from '00' to '400' */
@@ -123,7 +123,7 @@ li {
 
 li a{
   text-decoration: none;
-  color: #4e3e30;
+  color: #332921;
   display: inline;
   transition: 0.2s ease-in-out;
 }
@@ -293,9 +293,9 @@ li a.active {
 
   padding: 4rem 6rem;
 
-  /* font-family: "Playfair Display"; */
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-family: "Playfair Display";
+  font-size: 16pt;
+  font-weight: 400;
   text-align: center;
 
   border-radius: 8px;
@@ -381,7 +381,7 @@ li a.active {
 .profile-caption{
   font-family: VT323, monospace;
   font-size: medium;
-  color: #4e3e30aa;
+  color: #332921aa;
 
   margin-top: 0.2rem;
   margin-bottom: 1rem;
@@ -389,7 +389,7 @@ li a.active {
 
 .email-address{
   font-size: 10pt;
-  color: #4e3e30aa;
+  color: #332921aa;
   text-decoration: none;
 
   margin-top: 0rem;
@@ -459,7 +459,7 @@ li a.active {
   font-size: smaller;
   width: 100%;
   border-top: 1px solid #ccc;
-  margin-top: 3rem;
+  margin-top: 10vw;
   padding: 1rem clamp(1rem, 5vw, 4rem);
 
   position: relative;

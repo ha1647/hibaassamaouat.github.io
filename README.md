@@ -194,7 +194,9 @@ this list of goals was scheduled for this date, some things were checked off a w
   - `Home`, `Experience`, and `Blog` need to have their margins fixed, too wide.
   - `Projects` gallery images are not appealing, they're overloaded, there's too much white, and they don't make you want to click.
   - I might change the main font (IBM Plex Sans) further down the line
-<br> tasks
+
+tasks
+
   - [x] add `CV` tab
   - [ ] test new palette and main font
  

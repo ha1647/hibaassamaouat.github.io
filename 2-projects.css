@@ -113,6 +113,7 @@
   max-width: 300px;
   background-blend-mode: #FEFBF7;
   border-radius: 14px;
+  border:#1c375218 1px solid;
   overflow: hidden; /* clips image to rounded corners */
   box-shadow: 0 6px 20px rgba(0,0,0,0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
