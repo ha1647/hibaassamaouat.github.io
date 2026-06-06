@@ -28,155 +28,33 @@
 </head>
 
 <body>
-  <div class="mobile-warning">
+  <!-- <div class="mobile-warning">
     This website is not yet compatible with small screens.
-  </div>
+  </div> -->
 
   <!-- Navigation Bar -->
   <header>
-    <div class="main-wrapper">
-      <nav class="navbar-wrapper">
-        <nav class="nav-bar" role="navigation" aria-label="main navigation">
-          <a href="./" class="hiba-assamaouat-logo">Hiba Assamaouat</a>
-        </nav>
-
-        <!-- Navigation Bar -->
-        <ul>
-          <li class="hideOnMobile"><a class="active" href="./">Home</a></li>
-          <li class="hideOnMobile"><a href="./1-experience.html">Experience</a></li>
-          <li class="hideOnMobile"><a href="./2-projects.html">Projects</a></li>
-          <li class="hideOnMobile"><a href="./3-blog.html">Blog</a></li>
-          <!-- accessible link to cv -->
-          <li class="hideOnMobile">
-            <a class="landing-socials-item" style="font-weight: 500;" href="documents/HibaAssamaouat_CV_EN_pp.pdf" target="_blank" rel="noopener noreferrer">
-              CV
-              <svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -900 1100 1200" width="12px" fill="#af550f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
-            </a>
-          </li>
-
-          <!-- menu icon retrieved from Google Fonts. Downloaded .svg file and opened with .txt to get link -->
-          <li class="hideOnPc" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1c3752"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
-
-        <!-- Sidebar for mobile -->
-        <ul class="sidebar">
-          <li class="sidebar-header">
-            <a class="footer-signature" style="margin-bottom: 20px; grid-column: 2; justify-self: center;" href="./index.html">H♤A</a>
-            <button class="sidebar-close" aria-label="Close menu">
-              <!-- menu icon retrieved from Google Fonts. Downloaded .svg file and opened with .txt to get link -->
-              <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1c3752"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            </button>
-          </li>
-
-          <li><a class="active" href="./index.html">Home</a></li>
-          <li><a href="./1-experience.html">Experience</a></li>
-          <li><a href="./2-projects.html">Projects</a></li>
-          <li><a href="./3-blog.html">Blog</a></li>
-          <!-- accessible link to cv -->
-          <li>
-            <a class="landing-socials-item" style="font-weight: 500;" href="documents/HibaAssamaouat_CV_EN_pp.pdf" target="_blank" rel="noopener noreferrer">
-              CV
-              <svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -900 1100 1200" width="12px" fill="#af550f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
-            </a>
-          </li>
-
-
-          <div class="sidebar-footer">
-            <!-- LinkedIn Icon -->
-            <a 
-              href="https://www.linkedin.com/in/hiba-assamaouat/"
-              target="blank"
-              aria-label="LinkedIn"
-              class="fa fa-linkedin">
-            </a>
-
-            <!-- GitHub Icon -->
-            <a 
-              href="https://github.com/Hiba-Assamaouat"
-              target="blank"
-              aria-label="GitHub"
-              class="fa fa-github">
-            </a>
-
-            <!-- Mail Icon -->
-            <a 
-              href="mailto:ha1647@nyu.edu"
-              target="blank"
-              aria-label="Envelope"
-              class="fa fa-envelope">
-            </a>
-            <!-- <div class="hide">ha1647@nyu.edu</div> -->
-
-          </div>
-        </ul>
-
-        
-
-      </nav>
+    <section class="hero">
+    <h1 class="hero-name" aria-label="Hiba Assamaouat">
+      <span class="typed"></span><span class="caret" aria-hidden="true"></span>
+    </h1>
+ 
+    <p class="hero-welcome">welcome to my corner of the internet.</p>
+ 
+    <div class="hero-actions">
+      <!-- rename labels + point hrefs at your real pages when ready -->
+      <a class="hero-btn" href="/1-path.html">Path</a>
+      <span class="hero-sep" aria-hidden="true">&#9828;</span>
+      <a class="hero-btn" href="/2-prose.html">Prose</a>
     </div>
-  </header>
-
-<!-- Main Content -->
-<main class="main-content">
-  <!-- <div class="main-wrapper"> -->
-    <!-- <hr class="class-divider-thin" />
-  </div> -->
-    <section class="landing-content">
-      <h1>Hey, I'm Hiba.</h1>
-      <p>
-        I'm an Electrical Engineer from <a class="nyu" href="https://www.nyu.edu/abudhabi/" target="_blank">New York University Abu Dhabi</a>.
-      </p>
-
-      <p>
-        Welcome to my personal website! Here, you'll find information about my experience, projects, and blog posts.
-        Feel free to explore and learn more about me and my work.
-      </p>
-      <p>
-        I am currently working on some fun <a href="./2-projects.html" class="inline-link">projects</a> while exploring job opportunities in the fields of circuit design, software, project management, and many more.
-      </p>
-      <p> 
-        If you are a recruiter or potential collaborator, please don't hesitate to reach out via <a href="mailto:ha1647@nyu.edu" class="inline-link">email</a>.
-      </p>
-
-      <div class="landing-socials">
-        <a class="landing-socials-item" href="https://www.linkedin.com/in/hiba-assamaouat/" target="_blank">LinkedIn</a>
-          <span style="color:#4e3e30">●</span>
-        <a class="landing-socials-item" href="https://github.com/Hiba-Assamaouat" target="_blank">GitHub</a>
-          <span style="color:#4e3e30">●</span>
-        <a class="landing-socials-item" href="documents/HibaAssamaouat_CV_EN_pp.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-      </div>
-
-      <!-- <section class="current-interest">
-        <div class="current-interest-content" style="font-weight: 600;">
-          Currently reading
-        </div>
-        <div class="current-interest-content">
-          Fiction novel <a class="interest-link"> &nbsp Le Comte de Monte Cristo &nbsp</a> by Alexandre Dumas <br><br> 
-          Classic self-help <a class="interest-link"> &nbsp How to Win Friends and Influence People &nbsp</a> by Dale Carnegie 
-        </div>
-      </section> -->
-
-    </section>
-
-    <aside class="landing-profile">
-      <img
-        class= "profile-pic"
-        src="images/profile-pic-1.png"
-        alt="Hiba Assamaouat Profile Picture"/>
-      
-        <p class="profile-caption">
-          ⌚︎ rabat - working on some code
-        </p>
-
-        <a href="mailto:ha1647@nyu.edu" class="email-address">
-          ha1647@nyu.edu
-        </a>
-    </aside>
-
-
-</main>
-
-
+ 
+    <!-- hint order matches button order: 0 = Path, 1 = Prose -->
+    <div class="hero-hint" aria-live="polite">
+      <span class="hint-text">Who I am, where I've worked, and a few things I've built.</span>
+      <span class="hint-text">Essays and notes on what I'm building and thinking through.</span>
+    </div>
+  </section>
+  
 <!-- Footer -->
 <footer class="footer">
   <div class="footer-content">
