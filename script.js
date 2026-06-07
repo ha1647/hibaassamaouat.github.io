@@ -1,18 +1,21 @@
 
 
 // ===Landing page animations ===
+  const NAME = "Hiba Assamaouat";
 
- const NAME = "Hiba Assamaouat";
+  // transition timings (in ms)
   const TYPE_SPEED = 85;     // ms per character
   const START_DELAY = 350;   // beat before typing begins
   const POST_TYPE_PAUSE = 450;   // beat after name finishes, before welcome
   const WELCOME_TO_BTNS = 550;   // gap between welcome fade and buttons rising
  
+  // Element references
   const typedEl   = document.querySelector(".typed");
   const caretEl   = document.querySelector(".caret");
   const welcomeEl = document.querySelector(".hero-welcome");
   const actionsEl = document.querySelector(".hero-actions");
- 
+  
+  // accessibility
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
  
   function reveal() {
@@ -24,10 +27,11 @@
     // skip the animation entirely
     typedEl.textContent = NAME;
     reveal();
-  } else {
+  } else { //if not accessibility preference, run animation as normal
     let i = 0;
     function typeNext() {
       if (i < NAME.length) {
+        // type name letter by letter
         typedEl.textContent += NAME.charAt(i);
         i++;
         setTimeout(typeNext, TYPE_SPEED);
@@ -181,14 +185,14 @@ document.addEventListener('keydown', e => {   // allows user to close overlay by
   }
 });
 
-// Close project by clicking away
-const overlay = document.getElementById('projectOverlay');
-const modal = overlay.querySelector('.project-modal');
+// // Close project by clicking away
+// const overlay = document.getElementById('projectOverlay');
+// const modal = overlay.querySelector('.project-modal');
 
-overlay.addEventListener('click', () => {
-  closeProject();
-});
+// overlay.addEventListener('click', () => {
+//   closeProject();
+// });
 
-modal.addEventListener('click', e => {
-  e.stopPropagation(); // prevents closing when clicking inside modal
-});
+// modal.addEventListener('click', e => {
+//   e.stopPropagation(); // prevents closing when clicking inside modal
+// });

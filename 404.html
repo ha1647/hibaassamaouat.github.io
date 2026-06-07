@@ -6,14 +6,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Hiba Assamaouat</title>
+  <title>Hiba Assamaouat - Experience</title>
   <link rel="icon" type="image/png" href="images/Signature&Favicon3.png"/>
 
   <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Engagement&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&family=VT323&display=swap" rel="stylesheet">
-<!-- Fonts used are "Fairplay Display" (not "Engagement" or "Sora" anymore) for the name logo, and "IBM Plex Sans" for everything else, "VT323" is for the Techno style font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Engagement&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&family=VT323&display=swap" rel="stylesheet">
+  <!-- Fonts used are "Sora" (not "Engagement" anymore) for the name logo, and "IBM Plex Sans" for everything else, "VT323" is for the Techno style font-->
 
   <!-- Google Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
@@ -24,88 +24,76 @@
 
   <!-- CSS File -->
   <link rel="stylesheet" href="0-styles.css" />
-  <!-- <script src="searchbar.js" defer></script> -->
+
+  <!-- JavaScript file is in the footer -->
+  
 </head>
 
 <body>
-  <div class="mobile-warning">
+  <!-- <div class="mobile-warning">
     This website is not yet compatible with small screens.
-  </div>
+  </div> -->
+ <!-- CONSTRUCTION -->
+  <!-- <div class="construction-overlay"></div>
+  <div class="construction">
+    This page is under construction
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1c3752"><path d="M600-40H440q-17 0-28.5-11.5T400-80v-240q0-17 11.5-28.5T440-360h40v-120H160q-33 0-56.5-23.5T80-560v-160q0-33 23.5-56.5T160-800h80v-40q0-17 11.5-28.5T280-880h480q17 0 28.5 11.5T800-840v160q0 17-11.5 28.5T760-640H280q-17 0-28.5-11.5T240-680v-40h-80v160h320q33 0 56.5 23.5T560-480v120h40q17 0 28.5 11.5T640-320v240q0 17-11.5 28.5T600-40Zm-120-80h80v-160h-80v160ZM320-720h400v-80H320v80Zm160 600h80-80ZM320-720v-80 80Z"/></svg>
+  </div> -->
+
 
   <!-- Navigation Bar -->
-  <header>
-    <div class="main-wrapper">
-      <nav class="navbar-wrapper">
-        <nav class="nav-bar" role="navigation" aria-label="main navigation">
-          <a href="./" class="hiba-assamaouat-logo">Hiba Assamaouat</a>
-        </nav>
-
-        <!-- Navigation Bar -->
-        <ul>
-          <li class="hideOnMobile"><a href="./">Home</a></li>
-          <li class="hideOnMobile"><a href="./1-experience.html">Experience</a></li>
-          <li class="hideOnMobile"><a href="./2-projects.html">Projects</a></li>
-          <li class="hideOnMobile"><a href="./3-blog.html">Blog</a></li>
-          <!-- menu icon retrieved from Google Fonts. Downloaded .svg file and opened with .txt to get link -->
-          <li class="hideOnPc" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1c3752"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
-
-        <!-- Sidebar for mobile -->
-        <ul class="sidebar">
-          <li class="sidebar-header">
-            <a class="footer-signature" style="margin-bottom: 20px; grid-column: 2; justify-self: center;" href="./index.html">H♤A</a>
-            <button class="sidebar-close" aria-label="Close menu">
-              <!-- menu icon retrieved from Google Fonts. Downloaded .svg file and opened with .txt to get link -->
-              <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1c3752"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            </button>
-          </li>
-
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./1-experience.html">Experience</a></li>
-          <li><a href="./2-projects.html">Projects</a></li>
-          <li><a href="./3-blog.html">Blog</a></li>
-
-          <div class="sidebar-footer">
-            <!-- LinkedIn Icon -->
-            <a 
-              href="https://www.linkedin.com/in/hiba-assamaouat/"
-              target="blank"
-              aria-label="LinkedIn"
-              class="fa fa-linkedin">
-            </a>
-
-            <!-- GitHub Icon -->
-            <a 
-              href="https://github.com/Hiba-Assamaouat"
-              target="blank"
-              aria-label="GitHub"
-              class="fa fa-github">
-            </a>
-
-            <!-- Mail Icon -->
-            <a 
-              href="mailto:ha1647@nyu.edu"
-              target="blank"
-              aria-label="Envelope"
-              class="fa fa-envelope">
-            </a>
-            <!-- <div class="hide">ha1647@nyu.edu</div> -->
-
-          </div>
-        </ul>
-
-        
-
-      </nav>
-    </div>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-logo" href="./index.html">Hiba Assamaouat</a>
+ 
+      <ul class="nav-links">
+        <li><a href="./1-path.html">Path</a></li>
+        <li><a href="./2-prose.html" class="active">Prose</a></li>
+        <li>
+          <a class="nav-cv" href="documents/HibaAssamaouat_CV_EN_pp_june.pdf" target="_blank" rel="noopener noreferrer">
+            CV
+            <i class="redirect-icon" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+ 
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+      </button>
+    </nav>
   </header>
-
+ 
+  <!-- mobile slide-in sidebar -->
+  <div class="nav-overlay" data-close></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="Mobile navigation">
+    <div class="mobile-top">
+      <a class="mobile-logo" href="./index.html">H&#9828;A</a>
+      <button class="mobile-close" data-close aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </button>
+    </div>
+ 
+    <nav class="mobile-links" aria-label="Mobile primary">
+      <a href="./path.html">Path</a>
+      <a href="./prose.html" class="active">Prose</a>
+      <a class="nav-cv" href="documents/HibaAssamaouat_CV_EN_pp_june.pdf" target="_blank" rel="noopener noreferrer">
+        CV
+        <i class="redirect-icon" aria-hidden="true"></i>
+      </a>
+    </nav>
+ 
+    <div class="mobile-socials">
+      <a href="https://www.linkedin.com/in/hiba-assamaouat/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Hiba-Assamaouat" target="_blank">GitHub</a>
+      <a href="mailto:ha1647@nyu.edu">Email</a>
+    </div>
+  </aside>
+ 
 <!-- Main Content -->
 <main class="not-found">
   <h1>404</h1>
   <p>The page you're looking for can't be found.</p>
   <a href="/" class="btn">Back to home <svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -900 1000 650" width="14px" fill="#af550f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></a>
-
 </main>
 
 
