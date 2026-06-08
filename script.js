@@ -95,35 +95,39 @@
   // }
 
 // NEWEST VERSION OF SIDEBAR
-  const header   = document.querySelector(".site-header");
-  const toggle   = document.querySelector(".nav-toggle");
-  const menu     = document.querySelector(".mobile-menu");
-  const overlay  = document.querySelector(".nav-overlay");
-  const closers  = document.querySelectorAll("[data-close]");
+const header   = document.querySelector(".site-header");
+const toggle   = document.querySelector(".nav-toggle");
+const menu     = document.querySelector(".mobile-menu");
+const overlay  = document.querySelector(".nav-overlay");
+const closers  = document.querySelectorAll("[data-close]");
+
+function openMenu() {
+  menu.classList.add("is-open");
+  overlay.classList.add("is-open");
+  toggle.setAttribute("aria-expanded", "true");
+  menu.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";   // lock background scroll
+}
+function closeMenu() {
+  menu.classList.remove("is-open");
+  overlay.classList.remove("is-open");
+  toggle.setAttribute("aria-expanded", "false");
+  menu.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
  
-  function openMenu() {
-    menu.classList.add("is-open");
-    overlay.classList.add("is-open");
-    toggle.setAttribute("aria-expanded", "true");
-    menu.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";   // lock background scroll
-  }
-  function closeMenu() {
-    menu.classList.remove("is-open");
-    overlay.classList.remove("is-open");
-    toggle.setAttribute("aria-expanded", "false");
-    menu.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-  }
- 
+if (toggle && menu) {
   toggle.addEventListener("click", openMenu);
   closers.forEach((el) => el.addEventListener("click", closeMenu));
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
- 
-  // faint separation once scrolled
+}
+
+// faint separation appears once scrolled
+if (header) {
   const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
   window.addEventListener("scroll", onScroll);
   onScroll();
+}
 
 
 // PROJECTS GALLERY FILTER FUNCTIONS
