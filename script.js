@@ -217,3 +217,10 @@ document.addEventListener('keydown', e => {   // allows user to close overlay by
     const words = body.innerText.trim().split(/\s+/).filter(Boolean).length;
     rt.textContent = Math.max(1, Math.round(words / 225)) + " min read";
   }
+
+
+  // == Footer signature jumps to top when clicked on
+  document.querySelector(".footer-signature")
+  ?.addEventListener("click", () =>
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  );
