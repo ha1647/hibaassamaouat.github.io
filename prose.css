@@ -97,6 +97,7 @@ body{margin:0;background:var(--c-cream);color:var(--c-text);font-family:var(--fo
 }
 .share-btn:hover{background:var(--c-orange);transform:scale(1.08);}
 .share-btn svg{width:14px;height:14px;fill:currentColor;}
+.copied-toast.is-error{ background:var(--c-orange); }   /* when the copy fails */
 
 .rule{border:none;border-top:1px solid var(--c-navy-faint);margin:2rem 0;}
 
