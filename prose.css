@@ -63,6 +63,7 @@ body{margin:0;background:var(--c-cream);color:var(--c-text);font-family:var(--fo
 /* back to Prose */
 .back-link{
   display:inline-flex;align-items:center;gap:.4rem;
+  font-family: var(--font-display);font-style: italic;
   font-size:.85rem;color:var(--c-text-soft);text-decoration:none;
   transition:color .2s ease,gap .2s ease;
   margin-bottom:3rem;
