@@ -2,7 +2,7 @@
 
 /* intro: text + photo side by side, stacks on mobile */
 .intro{display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:start;}
-.intro h1{font-family:var(--font-display);font-weight:600;color:var(--c-navy);font-size:1.6rem;margin:0 0 .6rem;}
+.intro-text h1{font-family:var(--font-display);font-weight:600;color:var(--c-navy);font-size:1.6rem;margin:0 0 .6rem;}
 .intro p{max-width:60ch;margin:0 0 1rem;}
 
 .intro-media{margin:0.5rem 0 0 0;display:flex;flex-direction:column;align-items:center;}
@@ -66,7 +66,7 @@
 .is-news{--accent:var(--c-brown);}
 
 /* === CAREER SECTION === */
-.exp-intro{max-width:62ch;margin:0 0 1rem;color:var(--c-text);}
+.exp-intro{/*max-width:62ch;*/ max-width: 100%;margin:0 0 1rem;color:var(--c-text);}
 
 /* subtle doc links (as opposed to big buttons from previous version) */
 .doc-links{display:flex;flex-wrap:wrap;gap:1.3rem;margin:0 0 2.2rem;}

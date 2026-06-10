@@ -200,3 +200,20 @@ document.addEventListener('keydown', e => {   // allows user to close overlay by
 // modal.addEventListener('click', e => {
 //   e.stopPropagation(); // prevents closing when clicking inside modal
 // });
+
+// === Prose ISSUEs === copy link + read time
+  const btn = document.getElementById("copy");
+  if (btn) {
+    btn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        btn.title = "Copied!";
+      } catch { btn.title = "Copy failed"; }
+    });
+  }
+  const body = document.querySelector(".article-body");
+  const rt = document.getElementById("readtime");
+  if (body && rt) {
+    const words = body.innerText.trim().split(/\s+/).filter(Boolean).length;
+    rt.textContent = Math.max(1, Math.round(words / 225)) + " min read";
+  }
