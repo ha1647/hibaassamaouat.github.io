@@ -1,50 +1,37 @@
+// === Landing page animations ===
+const typedEl   = document.querySelector(".typed");
+const caretEl   = document.querySelector(".caret");
+const welcomeEl = document.querySelector(".hero-welcome");
+const actionsEl = document.querySelector(".hero-actions");
 
-
-// ===Landing page animations ===
+// Needed to add this condition so it would only run in the landing page otherwise error @console
+if (typedEl && caretEl && welcomeEl && actionsEl) {
   const NAME = "Hiba Assamaouat";
-
-  // transition timings (in ms)
-  const TYPE_SPEED = 85;     // ms per character
-  const START_DELAY = 350;   // beat before typing begins
-  const POST_TYPE_PAUSE = 450;   // beat after name finishes, before welcome
-  const WELCOME_TO_BTNS = 550;   // gap between welcome fade and buttons rising
- 
-  // Element references
-  const typedEl   = document.querySelector(".typed");
-  const caretEl   = document.querySelector(".caret");
-  const welcomeEl = document.querySelector(".hero-welcome");
-  const actionsEl = document.querySelector(".hero-actions");
-  
-  // accessibility
+  const TYPE_SPEED = 85, START_DELAY = 350, POST_TYPE_PAUSE = 450, WELCOME_TO_BTNS = 550;
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
- 
+
   function reveal() {
     welcomeEl.classList.add("is-visible");
     setTimeout(() => actionsEl.classList.add("is-visible"), WELCOME_TO_BTNS);
   }
- 
-  if (reduceMotion) { //for accessibility-> if user prefers reduced motion,
-    // skip the animation entirely
+
+  if (reduceMotion) {
     typedEl.textContent = NAME;
     reveal();
-  } else { //if not accessibility preference, run animation as normal
+  } else {
     let i = 0;
     function typeNext() {
       if (i < NAME.length) {
-        // type name letter by letter
         typedEl.textContent += NAME.charAt(i);
         i++;
         setTimeout(typeNext, TYPE_SPEED);
       } else {
-        // done typing: fade the caret out, then reveal the rest
-        setTimeout(() => {
-          caretEl.classList.add("is-hidden");
-          reveal();
-        }, POST_TYPE_PAUSE);
+        setTimeout(() => { caretEl.classList.add("is-hidden"); reveal(); }, POST_TYPE_PAUSE);
       }
     }
     setTimeout(typeNext, START_DELAY);
   }
+}
  
   // ===== hover/focus descriptions =====
   // on mobile, CSS overrides these classes so the text stays visible regardless
@@ -209,15 +196,6 @@ document.addEventListener('keydown', e => {   // allows user to close overlay by
 // read time
 const body = document.querySelector(".article-body");
 const rt = document.getElementById("readtime");
-if (body && rt) {
-  const words = body.innerText.trim().split(/\s+/).filter(Boolean).length;
-  rt.textContent = Math.max(1, Math.round(words / 225)) + " min read";
-}
-
-// copy link
-// ===== Article (Prose issue) =====
-const body = document.querySelector(".article-body");
-const rt   = document.getElementById("readtime");
 if (body && rt) {
   const words = body.innerText.trim().split(/\s+/).filter(Boolean).length;
   rt.textContent = Math.max(1, Math.round(words / 225)) + " min read";
