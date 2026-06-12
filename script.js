@@ -215,8 +215,20 @@ if (body && rt) {
 }
 
 // copy link
+// ===== Article (Prose issue) =====
+const body = document.querySelector(".article-body");
+const rt   = document.getElementById("readtime");
+if (body && rt) {
+  const words = body.innerText.trim().split(/\s+/).filter(Boolean).length;
+  rt.textContent = Math.max(1, Math.round(words / 225)) + " min read";
+}
+
+const btn   = document.getElementById("copy");
+const toast = document.querySelector(".copied-toast");
+let toastTimer;
+
 function showToast(msg, ok = true){
-  if(!toast) return;
+  if (!toast) return;
   toast.textContent = msg;
   toast.classList.toggle("is-error", !ok);
   toast.classList.add("is-visible");
@@ -234,42 +246,9 @@ if (btn) {
     }
   });
 }
-// const btn = document.getElementById("copy");
-// const toast = document.querySelector(".copied-toast");
-// let toastTimer;
 
-// function showToast(msg, ok = true){
-//   if(!toast) return;
-//   toast.textContent = msg;
-//   toast.classList.toggle("is-error", !ok);
-//   toast.classList.add("is-visible");
-//   clearTimeout(toastTimer);
-//   toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 5000);
-// }
-
-// if (btn) {
-//   btn.addEventListener("click", async () => {
-//     try {
-//       await navigator.clipboard.writeText(window.location.href);
-//       btn.title = "Copied!";
-//     } catch { btn.title = "Copy failed"; }
-//   });
-// }
-
-// if (btn) {
-//   btn.addEventListener("click", async () => {
-//     try {
-//       await navigator.clipboard.writeText(window.location.href);
-//       showToast("Link copied");
-//     } catch {
-//       showToast("Couldn't copy, copy from the address bar", false);
-//     }
-//   });
-// }
-// == end of Prose ISSUE_00x content ==
-
-// == Footer signature jumps to top when clicked on
+// ===== Footer: signature scrolls to top =====
 document.querySelector(".footer-signature")
-?.addEventListener("click", () =>
-  window.scrollTo({ top: 0, behavior: "smooth" })
-);
+  ?.addEventListener("click", () =>
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  );
