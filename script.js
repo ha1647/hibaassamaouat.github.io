@@ -33,21 +33,21 @@ if (typedEl && caretEl && welcomeEl && actionsEl) {
   }
 }
  
-  // ===== hover/focus descriptions =====
-  // on mobile, CSS overrides these classes so the text stays visible regardless
-  document.querySelectorAll(".hero-option").forEach((option) => {
-    const btn  = option.querySelector(".hero-btn");
-    const hint = option.querySelector(".hint-text");
-    if (!btn || !hint) return;
- 
-    const show = () => hint.classList.add("is-visible");
-    const hide = () => hint.classList.remove("is-visible");
- 
-    btn.addEventListener("mouseenter", show);
-    btn.addEventListener("focus", show);   // keyboard users get it too
-    btn.addEventListener("mouseleave", hide);
-    btn.addEventListener("blur", hide);
-  });
+// ===== hover/focus descriptions =====
+// on mobile, CSS overrides these classes so the text stays visible regardless
+document.querySelectorAll(".hero-option").forEach((option) => {
+  const btn  = option.querySelector(".hero-btn");
+  const hint = option.querySelector(".hint-text");
+  if (!btn || !hint) return;
+
+  const show = () => hint.classList.add("is-visible");
+  const hide = () => hint.classList.remove("is-visible");
+
+  btn.addEventListener("mouseenter", show);
+  btn.addEventListener("focus", show);   // keyboard users get it too
+  btn.addEventListener("mouseleave", hide);
+  btn.addEventListener("blur", hide);
+});
 
 
 // === end of landing page animations ===
@@ -175,6 +175,11 @@ document.addEventListener('keydown', e => {   // allows user to close overlay by
     }
   }
 });
+
+// if (e.key === 'Escape') {
+//   const overlay = document.getElementById('projectOverlay');
+//   if (overlay && overlay.classList.contains('active')) closeProject();
+// }
 
 // // Close project by clicking away
 // const overlay = document.getElementById('projectOverlay');
