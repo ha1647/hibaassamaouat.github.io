@@ -6,7 +6,7 @@
 /* ===== ISSUE GRID ===== */
 .issue-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
   gap:1.6rem;
 }
 .issue{text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:.75rem;}
@@ -87,7 +87,8 @@ body{margin:0;background:var(--c-cream);color:var(--c-text);font-family:var(--fo
 .meta-facts{display:flex;align-items:center;gap:.5rem;}
 
 /* share */
-.share{display:flex;align-items:center;gap:.5rem;}
+.share{position:relative;display:flex;flex-direction:column;align-items:flex-end;gap:.4rem;}
+.share-row{display:flex;align-items:center;gap:.5rem;}
 .share-btn{
   width:30px;height:30px;border-radius:50%;
   display:grid;place-items:center;
@@ -97,7 +98,22 @@ body{margin:0;background:var(--c-cream);color:var(--c-text);font-family:var(--fo
 }
 .share-btn:hover{background:var(--c-orange);transform:scale(1.08);}
 .share-btn svg{width:14px;height:14px;fill:currentColor;}
-.copied-toast.is-error{ background:var(--c-orange); }   /* when the copy fails */
+.copied-toast{
+  position:absolute;
+  right:calc(100% + .7rem);
+  top: 50%;
+  transform:translateY(-50%);
+  white-space:nowrap;
+
+  font-family: var(--font-display);
+  font-style:italic;
+  font-size:.8rem;
+  color:var(--c-text-soft);   /* grey */
+  opacity:0;
+  transition:opacity .2s ease;
+}
+.copied-toast.is-visible{opacity:1;}
+.copied-toast.is-error{ color:var(--c-orange); }   /* when the copy fails */
 
 .rule{border:none;border-top:1px solid var(--c-navy-faint);margin:2rem 0;}
 

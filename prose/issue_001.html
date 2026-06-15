@@ -100,15 +100,18 @@
           <span>June 2026</span><span>·</span><span id="readtime">… min read</span>
         </div>
         <div class="share">
-          <!-- copy link (JS, works in-browser) -->
-          <button class="share-btn" id="copy" aria-label="Copy link" title="Copy link">
-            <svg viewBox="0 -960 960 960"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
-          </button>
-          <!-- LinkedIn (href, no JS) -->
-          <a class="share-btn" aria-label="Share on LinkedIn" title="LinkedIn"
-             href="https://www.linkedin.com/sharing/share-offsite/?url=ARTICLE_URL" target="_blank" rel="noopener">
-            <svg viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-          </a>
+          <div class="share-row">
+            <!-- copy link (JS script) -->
+            <button class="share-btn" id="copy" aria-label="Copy link" title="Copy link">
+              <svg viewBox="0 -960 960 960"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
+            </button>
+            <!-- LinkedIn -->
+            <a class="share-btn" aria-label="Share on LinkedIn" title="LinkedIn"
+              href="https://www.linkedin.com/sharing/share-offsite/?url=ARTICLE_URL" target="_blank" rel="noopener">
+              <svg viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+            </a>
+          </div>
+          <span class="copied-toast" aria-live="polite"></span>
         </div>
       </div>
     </header>
@@ -164,4 +167,5 @@
 <script src="../script.js"></script>
 
 </body>
+
 </html>

@@ -206,6 +206,7 @@ if (body && rt) {
   rt.textContent = Math.max(1, Math.round(words / 225)) + " min read";
 }
 
+// link copied message
 const btn   = document.getElementById("copy");
 const toast = document.querySelector(".copied-toast");
 let toastTimer;
