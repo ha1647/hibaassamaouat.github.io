@@ -129,6 +129,14 @@ if (certsToggle) {
   });
 }
 
+// Redirect to exact project from project selection in path
+window.addEventListener('DOMContentLoaded', () => {
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (!id) return;
+  const card = document.querySelector(`.portfolio-item[data-project="${id}"]`);
+  if (card) openProject(card);
+});
+
 // PROJECTS GALLERY FILTER FUNCTIONS
 function filterSelection(category, button) {
   const items = document.querySelectorAll('.portfolio-item');
