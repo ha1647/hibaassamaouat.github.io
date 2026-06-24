@@ -117,6 +117,18 @@ if (header) {
 }
 
 
+// certificates display toggle
+const certsToggle = document.querySelector('.certs-toggle');
+if (certsToggle) {
+  certsToggle.addEventListener('click', () => {
+    const expanded = certsToggle.getAttribute('aria-expanded') === 'true';
+    certsToggle.setAttribute('aria-expanded', String(!expanded));
+    document.querySelector('.certs').classList.toggle('expanded');
+    certsToggle.querySelector('.certs-toggle-text').textContent =
+      expanded ? 'See full list' : 'See less';
+  });
+}
+
 // PROJECTS GALLERY FILTER FUNCTIONS
 function filterSelection(category, button) {
   const items = document.querySelectorAll('.portfolio-item');
@@ -175,6 +187,12 @@ document.addEventListener('keydown', e => {   // allows user to close overlay by
     }
   }
 });
+const projectOverlay = document.getElementById('projectOverlay');
+if (projectOverlay) {
+  projectOverlay.addEventListener('click', e => {
+    if (e.target === projectOverlay) closeProject();  // backdrop only, not the modal
+  });
+}
 
 // if (e.key === 'Escape') {
 //   const overlay = document.getElementById('projectOverlay');

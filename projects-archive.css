@@ -23,6 +23,11 @@
   max-width: 100vw;
 }
 
+.intro-text h1,
+.projects-content h1{
+  font-family:var(--font-display);font-weight:600;color:var(--c-navy);
+  font-size:1.6rem;margin:0 0 .6rem;
+}
 
 /* PROJECTS GALLERY */
 .gallery-filters {
@@ -111,11 +116,11 @@
 /* Card */
 .portfolio-item {
   max-width: 300px;
-  background-blend-mode: #FEFBF7;
+  background: var(--c-cream);
   border-radius: 14px;
   border:#1c375218 1px solid;
   overflow: hidden; /* clips image to rounded corners */
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 24px 60px rgba(28,55,82,.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: pointer;
 
@@ -156,6 +161,15 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.35s ease;
+
+  /* width: 200px;
+  height: auto; */
+  box-sizing: border-box;
+  padding: 4px;
+  border: 1px solid var(--c-navy-faint);
+  border-radius: 16px;
+  background: var(--c-navy);
+  display: block;
 }
 
 /* Image micro-zoom on hover */
@@ -252,7 +266,7 @@
   justify-content: space-between;
 
   padding: 1.2rem 1.5rem;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--c-navy-faint);
 }
 
 /* Close button */
@@ -273,20 +287,23 @@
 .modal-close svg {
   width: 24px;
   height: 24px;
-  fill: #1c3752;
+  fill: var(--c-navy);
 }
 
-.modal-content h2 {
-  margin-bottom: 0.1rem;
-}
 .project-date {
   margin-top: 0;
   font-size: 10pt;
   font-style: italic;
-  color: #1c3752b0;
-} 
+  fill: var(--c-navy);
+}
+.modal-content h2 {
+  margin-bottom: 0.1rem;
+  font-weight: 600;
+  color: var(--c-navy);
+}
 .modal-content h3{
-  color: #1c3752;
+  font-family: var(--font-display);
+  color: var(--c-navy);
   font-weight: 600;
   font-size: 12pt;
 }
