@@ -262,3 +262,77 @@ document.querySelector(".footer-signature")
   ?.addEventListener("click", () =>
     window.scrollTo({ top: 0, behavior: "smooth" })
   );
+
+
+
+
+
+// ===== Marginalia rail: collapse / expand =====
+const proseLayout = document.querySelector('.prose-layout');
+if (proseLayout) {
+  const margToggles = proseLayout.querySelectorAll('[data-marg-toggle]');
+  const STORE_KEY = 'marginalia-collapsed';
+
+  // const spineCount = proseLayout.querySelector('.marg-spine-count');
+  // if (spineCount) spineCount.textContent =
+  //   proseLayout.querySelectorAll('.rec').length + ' finds';
+
+  const setCollapsed = (collapsed) => {
+    proseLayout.classList.toggle('rail-collapsed', collapsed);
+    margToggles.forEach(btn => {
+      btn.setAttribute('aria-expanded', String(!collapsed));
+      btn.setAttribute('aria-label',
+        collapsed ? 'Expand recommendations' : 'Collapse recommendations');
+    });
+    try { localStorage.setItem(STORE_KEY, collapsed ? '1' : '0'); } catch {}
+  };
+
+  let saved = '0';
+  try { saved = localStorage.getItem(STORE_KEY) ?? '0'; } catch {}
+  setCollapsed(saved === '1');   // default: expanded
+
+  margToggles.forEach(btn =>
+    btn.addEventListener('click', () =>
+      setCollapsed(!proseLayout.classList.contains('rail-collapsed'))
+    )
+  );
+}
+
+
+// ===== Marginalia: render cards from JSON =====
+const margList = document.getElementById('marg-list');
+if (margList) {
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c =>
+    ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
+
+  const recHTML = (r) => {
+    const inner = esc(r.title) +
+      (r.url ? '<i class="redirect-icon" aria-hidden="true"></i>' : '');
+    const title = r.url ? `<a href="${esc(r.url)}">${inner}</a>` : inner;
+    const by = r.by
+      ? `<p class="rec-by">${esc(r.by)}${r.via ? ` · <span class="rec-via">${esc(r.via)}</span>` : ''}</p>`
+      : '';
+    const find = (!r.url && r.find)
+      ? `<p class="rec-find"><span>find:</span> ${esc(r.find)}</p>`
+      : '';
+    return `<article class="rec">
+        <div class="rec-meta"><span class="rec-kind">${esc(r.kind)}</span><span class="rec-date">${esc(r.date)}</span></div>
+        <h4 class="rec-title">${title}</h4>
+        ${by}
+        <p class="rec-note">${esc(r.note)}</p>
+        ${find}
+      </article>`;
+  };
+
+  fetch('marginalia.json')
+    .then(res => { if (!res.ok) throw new Error(res.status); return res.json(); })
+    .then(items => {
+      margList.innerHTML = items.map(recHTML).join('');
+      const spineCount = document.querySelector('.marg-spine-count');
+      if (spineCount) spineCount.textContent = items.length + ' finds';
+    })
+    .catch(err => {
+      console.error('Marginalia failed to load:', err);
+      margList.innerHTML = '<p class="rec-note">Couldn’t load recommendations.</p>';
+    });
+}

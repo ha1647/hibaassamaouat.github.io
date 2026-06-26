@@ -18,6 +18,8 @@
   <!-- Google Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=right_panel_close" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_menu_open" />
 
   <!-- Socials Icons -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -94,32 +96,61 @@
   <main class="page">
     <!-- <p class="prose-intro">Notes, recommendations, and half-formed opinions — mostly about engineering, occasionally not.</p> -->
     <p class="prose-intro">A collection of essays, commentaries, and recommendations. Written to be useful. Hopefully short enough to fit in your daily free time.</p>
+    
+    <div class="prose-layout"> 
+      <div class="issue-grid">
+        <!-- replace each .issue-media background/.ph with: <img src="..." alt=""> -->
+        <a class="issue" href="prose/issue_001">
+          <div class="issue-media"><span class="ph">article photo</span><span class="issue-label">ISSUE 001</span><span class="issue-date">JUN 2026</span></div>
+          <h3 class="issue-title">Lorem Ipsum dolor sit amet</h3>
+        </a>
+        <a class="issue" href="#">
+          <div class="issue-media" style="background:linear-gradient(155deg,#5a4a3c,#4e3e30);"><span class="ph">your photo</span><span class="issue-label">ISSUE 002</span><span class="issue-date">APR 2026</span></div>
+          <h3 class="issue-title">Lorem Ipsum dolor sit amet</h3>
+        </a>
+        <a class="issue" href="#">
+          <div class="issue-media" style="background:linear-gradient(155deg,#6a4a2c,#af550f);"><span class="ph">your photo</span><span class="issue-label">ISSUE 003</span><span class="issue-date">FEB 2026</span></div>
+          <h3 class="issue-title">How I'd redesign the thing everyone tolerates</h3>
+        </a>
+        <a class="issue" href="#">
+          <div class="issue-media" style="background:linear-gradient(155deg,#3a4a5c,#1c3752);"><span class="ph">your photo</span><span class="issue-label">ISSUE 004</span><span class="issue-date">DEC 2025</span></div>
+          <h3 class="issue-title">On valuing range over a single specialty</h3>
+        </a>
+        <a class="issue" href="#">
+          <div class="issue-media" style="background:linear-gradient(155deg,#4e4438,#2e2820);"><span class="ph">your photo</span><span class="issue-label">ISSUE 005</span><span class="issue-date">SEP 2025</span></div>
+          <h3 class="issue-title">A small piece of software I can't stop using</h3>
+        </a>
+        <a class="issue" href="#">
+          <div class="issue-media" style="background:linear-gradient(155deg,#46586a,#243a52);"><span class="ph">your photo</span><span class="issue-label">ISSUE 006</span><span class="issue-date">JUN 2025</span></div>
+          <h3 class="issue-title">Another title goes here</h3>
+        </a>
+      </div>
 
-    <div class="issue-grid">
-      <!-- replace each .issue-media background/.ph with: <img src="..." alt=""> -->
-      <a class="issue" href="prose/issue_001">
-        <div class="issue-media"><span class="ph">article photo</span><span class="issue-label">ISSUE 001</span><span class="issue-date">JUN 2026</span></div>
-        <h3 class="issue-title">Lorem Ipsum dolor sit amet</h3>
-      </a>
-      <!-- <a class="issue" href="#">
-        <div class="issue-media" style="background:linear-gradient(155deg,#5a4a3c,#4e3e30);"><span class="ph">your photo</span><span class="issue-label">ISSUE 002</span><span class="issue-date">APR 2026</span></div>
-      </a>
-      <a class="issue" href="#">
-        <div class="issue-media" style="background:linear-gradient(155deg,#6a4a2c,#af550f);"><span class="ph">your photo</span><span class="issue-label">ISSUE 003</span><span class="issue-date">FEB 2026</span></div>
-        <h3 class="issue-title">How I'd redesign the thing everyone tolerates</h3>
-      </a>
-      <a class="issue" href="#">
-        <div class="issue-media" style="background:linear-gradient(155deg,#3a4a5c,#1c3752);"><span class="ph">your photo</span><span class="issue-label">ISSUE 004</span><span class="issue-date">DEC 2025</span></div>
-        <h3 class="issue-title">On valuing range over a single specialty</h3>
-      </a>
-      <a class="issue" href="#">
-        <div class="issue-media" style="background:linear-gradient(155deg,#4e4438,#2e2820);"><span class="ph">your photo</span><span class="issue-label">ISSUE 005</span><span class="issue-date">SEP 2025</span></div>
-        <h3 class="issue-title">A small piece of software I can't stop using</h3>
-      </a>
-      <a class="issue" href="#">
-        <div class="issue-media" style="background:linear-gradient(155deg,#46586a,#243a52);"><span class="ph">your photo</span><span class="issue-label">ISSUE 006</span><span class="issue-date">JUN 2025</span></div>
-        <h3 class="issue-title">Another title goes here</h3>
-      </a> -->
+      <aside class="marginalia" aria-label="Recommendations">
+    <div class="marg-rail">
+
+      <div class="marg-head">
+        <button class="marg-toggle" type="button" data-marg-toggle aria-expanded="true" aria-controls="marg-list">
+          <span class="marg-title">Marginalia</span>
+          <span class="marg-chevron material-symbols-outlined" aria-hidden="true">arrow_menu_open</span>
+        </button>
+      </div>
+      <p class="marg-sub">recent finds</p>
+
+      <!-- === CONTENTS LINKED FROM JSON FILE -->
+      <div class="marg-list" id="marg-list"></div>
+      <!--              ==========            -->
+
+      <button class="marg-spine" type="button" data-marg-toggle
+              aria-expanded="true" aria-controls="marg-list"
+              aria-label="Expand recommendations">
+        <span class="marg-spine-chevron" aria-hidden="true">&lsaquo;</span>
+        <span class="marg-spine-label">Marginalia</span>
+        <span class="marg-spine-count">3 finds</span>
+      </button>
+
+    </div>
+  </aside>
     </div>
   </main>
 
