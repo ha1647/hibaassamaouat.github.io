@@ -1,11 +1,20 @@
 [
   {
     "kind": "essay",
+    "date": "JUL '26",
+    "title": "Learn In Public",
+    "url": "https://swyx.io/learn-in-public",
+    "by": "swyx (Shawn Wang)",
+    "via": "Developer & Entrepreneur",
+    "note": "It's about being engaged with the community in terms of learning and passing knowledge, and how opportunities can emerge from it."
+  },
+  {
+    "kind": "essay",
     "date": "JUN '26",
     "title": "How to Get Startup Ideas",
     "url": "https://www.paulgraham.com/startupideas.html",
     "by": "Paul Graham",
     "via": "Co-founder of YC",
-    "note": "Lorem ipsum dolor sit amet."
+    "note": "It starts by actively noticing gaps around you, not by sitting down and thinking about how to come up with a startup idea."
   }
 ]
